@@ -1,0 +1,30 @@
+#night {
+    width: 100%;
+}
+
+#bill-directions {
+    padding-top: 10em;
+}
+
+#bill-row {
+    padding-top: 50em;
+}
+
+#link-img {
+    height: 20em;
+    width: 30em;
+    opacity: .5;
+    border-radius: 10%;
+}
+
+#link-img:hover {
+    opacity: 1;
+}
+
+#image-row {
+    padding-top: 3em;
+}
+
+#pol-search-row {
+    padding-top: 4em;
+}

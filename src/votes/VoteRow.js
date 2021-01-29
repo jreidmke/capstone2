@@ -1,0 +1,36 @@
+import { Link } from 'react-router-dom'
+import {isEmpty, formatBillId} from './../helpers/helpers';
+import './VoteRow.css';
+
+const VoteRow = ({bill}) => {
+    let link;
+    let billId = bill.bill.bill_id;
+    let titleTxt;
+    if(isEmpty(bill.bill) || billId === undefined) {
+        link = <td>{bill.question}</td>
+        titleTxt = bill.description;
+    } else if(billId.slice(0,2) === 'hr') {
+        link = <td><Link to={`/bills/${bill.bill.bill_id}`}>{formatBillId(billId)}</Link></td>
+        titleTxt = bill.description;
+    } else if(billId.slice(0,2) === 'pn') {
+        link = <td><Link to={`/noms/${bill.nomination.number.toUpperCase()}`}>{formatBillId(billId)}</Link></td>
+        titleTxt = bill.description;
+    } else {
+        link = <td>{bill.question}</td>
+        titleTxt = <td>{`${bill.bill.number}... A quorum is `} <a href='https://www.senate.gov/reference/glossary_term/quorum.htm'>this.</a></td>
+    }
+
+
+    return(
+        <tr>
+            {link}
+            <td>{titleTxt}</td>
+            <td className={bill.position==='No' ? 'noVote' : 'yesVote'}>{bill.position}</td>
+            <td className={bill.result==='Failed' ? 'noVote' : 'yesVote'}>{bill.result}</td>            
+        </tr>
+    )
+};
+
+export default VoteRow;
+
+

@@ -1,0 +1,96 @@
+{
+  "response": {
+    "contributors": {
+      "@attributes": {
+        "cand_name": "Nancy Pelosi (D)",
+        "cid": "N00007360",
+        "cycle": "2020",
+        "origin": "Center for Responsive Politics",
+        "source": "https:\/\/www.opensecrets.org\/members-of-congress\/contributors?cid=N00007360&cycle=2020",
+        "notice": "The organizations themselves did not donate, rather the money came from the organization's PAC, its individual members or employees or owners, and those individuals' immediate families."
+      },
+      "contributor": [
+        {
+          "@attributes": {
+            "org_name": "University of California",
+            "total": "108933",
+            "pacs": "0",
+            "indivs": "108933"
+          }
+        },
+        {
+          "@attributes": {
+            "org_name": "Walt Disney Co",
+            "total": "45145",
+            "pacs": "0",
+            "indivs": "45145"
+          }
+        },
+        {
+          "@attributes": {
+            "org_name": "Stanford University",
+            "total": "43129",
+            "pacs": "0",
+            "indivs": "43129"
+          }
+        },
+        {
+          "@attributes": {
+            "org_name": "Kaiser Permanente",
+            "total": "40168",
+            "pacs": "0",
+            "indivs": "40168"
+          }
+        },
+        {
+          "@attributes": {
+            "org_name": "Alphabet Inc",
+            "total": "36999",
+            "pacs": "10000",
+            "indivs": "26999"
+          }
+        },
+        {
+          "@attributes": {
+            "org_name": "Microsoft Corp",
+            "total": "35972",
+            "pacs": "2500",
+            "indivs": "33472"
+          }
+        },
+        {
+          "@attributes": {
+            "org_name": "Apple Inc",
+            "total": "26998",
+            "pacs": "0",
+            "indivs": "26998"
+          }
+        },
+        {
+          "@attributes": {
+            "org_name": "Amazon.com",
+            "total": "26932",
+            "pacs": "10000",
+            "indivs": "16932"
+          }
+        },
+        {
+          "@attributes": {
+            "org_name": "US Government",
+            "total": "26579",
+            "pacs": "0",
+            "indivs": "26579"
+          }
+        },
+        {
+          "@attributes": {
+            "org_name": "Facebook Inc",
+            "total": "26352",
+            "pacs": "5000",
+            "indivs": "21352"
+          }
+        }
+      ]
+    }
+  }
+}

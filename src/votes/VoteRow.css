@@ -1,0 +1,9 @@
+.yesVote {
+    background-color: green;
+    color: lightgreen;
+}
+
+.noVote {
+    background-color: red;
+    color: pink;
+}

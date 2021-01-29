@@ -1,0 +1,29 @@
+#landingpage-img {
+    width: 100%;
+    height: 100%;
+    opacity: .6;
+    border-radius: 5%;
+}
+
+#landingpage-img:hover{
+    opacity: 1;
+}
+
+#landingpage-container {
+    padding-top: 15%;
+}
+
+#top-row {
+    padding-bottom: 15%;
+}
+
+#how-to-row {
+    padding-top: 15%;
+    padding-bottom: 15%;
+}
+
+#bottom-row {
+    padding-top: 15%;
+    padding-bottom: 5%;
+}
+

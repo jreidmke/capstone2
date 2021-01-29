@@ -1,0 +1,9 @@
+#billboard {
+    min-height: 600px;
+    width: 500px;
+    border: 1px gray solid;
+}
+
+Tab {
+    background-color: lightgreen;
+}
