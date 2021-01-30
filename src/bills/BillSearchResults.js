@@ -9,28 +9,31 @@ import Table from 'react-bootstrap/Table';
 import {FaCheck, FaTimes} from 'react-icons/fa'; 
 import {dateTimeFormatter} from './../helpers/helpers';
 import './BillSearchResults.css'; 
+import {useHistory} from 'react-router-dom';
 
 const BillSearchResults = () => {
     const {searchTerm} = useParams();
     const [results, setResults] = useState();
-
+    const h = useHistory();
     useEffect(() => {
         async function getResults() {
             const resp = await searchBills(searchTerm);
             setResults(resp);
         }
         getResults();
-    }, []); 
+    }, [searchTerm]); 
 
 
     return(
         <Container>
+            {results && results.length ?
+            <div>
+
             <Row>
                 <Col>
                     <h1>Search Results for: {searchTerm}</h1>
                 </Col>
             </Row>
-        {console.log(results)}
             <Table striped bordered hover variant='light'>
                 <thead>
                     <tr>
@@ -41,7 +44,7 @@ const BillSearchResults = () => {
                         <td>Is Active?</td>
                     </tr>
                 </thead>
-                <tbody>
+                <tbody>{console.log(h)}
                     {results ? results.map(r => (
                         <tr>
                             <td><Link to={`/bills/${r.bill_id}`}>{r.bill_id.toUpperCase()}</Link></td>
@@ -53,17 +56,11 @@ const BillSearchResults = () => {
                     )) : 'Loading'}
                 </tbody>
             </Table>
-
+        </div> 
+            : <h1>{`Search term: ${searchTerm} returned 0 results. `}</h1>    }
         </Container>
     )
 }
 
 export default BillSearchResults; 
 
-// bill_id
-
-// short_title
-
-// sponsor
-
-// status

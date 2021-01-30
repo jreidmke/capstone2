@@ -18,9 +18,16 @@ const BillForm = ({isNavbar}) => {
     };
 
     const handleSubmit = async(e) => {
+        console.log("FUCK")
         e.preventDefault();
-        console.log("PIZZA")
-        history.push(`/bills/search/${formData.term}`);
+        // history.length = 0; 
+        // history.replace('/'); 
+        console.log(history)
+        // history.push({
+        //     pathname: `/bills/search/${formData.term}`,
+        //     search: ''
+        // });
+        history.push(`/bills/search/`, {params: formData.term}); 
     };
 
     return(
