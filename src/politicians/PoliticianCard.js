@@ -4,9 +4,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTwitter, faFacebook, faYoutube } from '@fortawesome/free-brands-svg-icons'
 
 const PoliticianCard = ({pol, chamber, needLocale=true}) => {
-
-
-    // const stateAndParty = 'roles' in pol ? `(${pol.roles[0].state}-${pol.roles[0].party})` : `(${pol.party}-${pol.state})`
     const sAP = needLocale ? `(${pol.party}-${pol.state})` : `(${pol.party})`
     chamber = 'roles' in pol ? pol.roles[0].chamber.toLowerCase() : chamber; 
 
@@ -31,4 +28,3 @@ const PoliticianCard = ({pol, chamber, needLocale=true}) => {
 
 export default PoliticianCard;
 
-// {role.state}-{role.party}
