@@ -8,14 +8,15 @@ import SimpleMap from '../map/Map';
 import chamberImage from './../images/chamberImage.jpg';
 import constitutionImage from './../images/constitutionImage.jpg';
 import { FaArrowLeft, FaArrowDown } from 'react-icons/fa'; 
-import { FiArrowDownLeft, FiArrowDownRight } from 'react-icons/fi';
 import * as Scroll from 'react-scroll';
+import CustomAlert from './../common/Alert';
 
 
 const Hompage = () => {
     return(
 
         <Container>
+        <CustomAlert color='danger' message='Nomination Data is Currently Down! We apologize for the inconvenience.'/>
 
             <Row className='my-5'>
                 <Col><h2>To begin, select what you want to search!</h2></Col>

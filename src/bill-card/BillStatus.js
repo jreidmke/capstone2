@@ -1,4 +1,5 @@
 import Card from 'react-bootstrap/Card'
+import {dateTimeFormatter} from './../helpers/helpers';
 
 const BillStatus = ({bill}) => {
 
@@ -7,7 +8,7 @@ const BillStatus = ({bill}) => {
     return(
 
         <Card.Body>
-            <Card.Title>As of {bill.datetime}, {cardTitle}</Card.Title>
+            <Card.Title>As of {dateTimeFormatter(bill.datetime)}, {cardTitle}</Card.Title>
             <Card.Text>
                 The last action was: <b>{bill.description}</b>
             </Card.Text>
