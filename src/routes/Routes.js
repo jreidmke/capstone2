@@ -53,7 +53,7 @@ const Routes = () => {
                     <NomineeDetails/>
                 </Route>
 
-               <Redirect path='/' />
+               <Redirect to='/home' />
 
             </Switch>
         </div>
