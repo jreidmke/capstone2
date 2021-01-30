@@ -5,8 +5,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import './PoliticianContact.css'
 import StatementList from '../statements/StatementList';
-// import {getStatementsByPolitician} from './../api/api';
-import {PropublicaApi} from './../api/api2';
+import {PropublicaApi} from './../api/api';
 import { useEffect, useState } from 'react';
 import LoadingSpinner from '../common/LoadingSpinner';
 

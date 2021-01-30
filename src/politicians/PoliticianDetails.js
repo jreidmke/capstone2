@@ -3,7 +3,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import {useState, useEffect} from 'react';
 import {useParams} from 'react-router-dom';
-import {PropublicaApi} from './../api/api2';
+import {PropublicaApi} from './../api/api';
 import { TwitterTimelineEmbed } from 'react-twitter-embed';
 import LoadingSpinner from './../common/LoadingSpinner';
 import PoliticianBillboard from './PoliticianBillboard';

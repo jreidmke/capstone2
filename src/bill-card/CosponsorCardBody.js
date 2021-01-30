@@ -1,7 +1,6 @@
 import {useState, useEffect} from 'react';
 import LoadingSpinner from '../common/LoadingSpinner';
-// import {getBillCosponsers, PropublicaApi} from './../api/api'; 
-import {PropublicaApi} from './../api/api2';
+import {PropublicaApi} from './../api/api';
 import CosponsorRow from './CosponsorRow';
 import Card from 'react-bootstrap/Card';
 import Container from 'react-bootstrap/Container';

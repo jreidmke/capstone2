@@ -1,7 +1,6 @@
 import {useState, useEffect} from 'react';
 import {useParams} from 'react-router-dom';
-// import {getBillData} from './../api/api';
-import {PropublicaApi} from './../api/api2';
+import {PropublicaApi} from './../api/api';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';

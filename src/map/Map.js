@@ -1,6 +1,6 @@
 import { Map, GoogleApiWrapper, Marker, InfoWindow } from 'google-maps-react';
 import {useEffect, useState} from 'react';
-import {PropublicaApi, getAddressByCoords, getOCDStringByAddress } from './../api/api2'; 
+import {PropublicaApi, getAddressByCoords, getOCDStringByAddress } from './../api/api'; 
 import LoadingSpinner from '../common/LoadingSpinner'; 
 import InfoCard from './InfoCard';
 import Row from 'react-bootstrap/Row';

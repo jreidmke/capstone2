@@ -1,10 +1,9 @@
 import Card from 'react-bootstrap/Card';
 import ListGroup from 'react-bootstrap/ListGroup';
 import {useState, useEffect} from 'react';
-import {getRecentBills} from './../api/api';
 import LoadingSpinner from './../common/LoadingSpinner'; 
 import { Link } from 'react-router-dom'; 
-import {PropublicaApi} from './../api/api2';
+import {PropublicaApi} from './../api/api';
 
 const RecentBillCardBody = ({status}) => {
     const [bills, setBills] = useState();

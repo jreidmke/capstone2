@@ -1,6 +1,6 @@
 import {useParams} from 'react-router-dom';
 import {useState, useEffect} from 'react';
-import {getNominationData} from './../api/api';
+import {PropublicaApi} from './../api/api';
 import LoadingSpinner from './../common/LoadingSpinner';
 import NomineeTable from './NomineeTable';
 
@@ -10,7 +10,7 @@ const NomineeDetails = () => {
 
     useEffect(() => {
         async function getNom() {
-            const resp = await getNominationData(nomId);
+            const resp = await PropublicaApi.getNominationData(nomId);
             setNominee(resp);
             console.log(resp);
         }

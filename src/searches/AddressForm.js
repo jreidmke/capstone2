@@ -1,6 +1,5 @@
 import {useState} from 'react';
-import {getOCDStringByAddress} from './../api/api';
-import {PropublicaApi} from './../api/api2';
+import {PropublicaApi} from './../api/api';
 import {useHistory} from 'react-router-dom';
 import Button from 'react-bootstrap/Button'; 
 import './BillForm.css'; 

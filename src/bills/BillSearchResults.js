@@ -1,7 +1,6 @@
 import {useParams} from 'react-router-dom';
 import {useState, useEffect} from 'react';
-// import {searchBills} from './../api/api';
-import {PropublicaApi} from './../api/api2';
+import {PropublicaApi} from './../api/api';
 import { Link } from 'react-router-dom';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';

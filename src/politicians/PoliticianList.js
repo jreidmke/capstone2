@@ -1,6 +1,6 @@
 import {useState, useEffect} from 'react';
 import PoliticianCard from './PoliticianCard';
-import {PropublicaApi} from './../api/api2';
+import {PropublicaApi} from './../api/api';
 import CardDeck from 'react-bootstrap/CardDeck';
 import Container from 'react-bootstrap/Container';
 import Col from 'react-bootstrap/Col';
