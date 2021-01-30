@@ -3,13 +3,11 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import {useState, useEffect} from 'react';
 import {useParams} from 'react-router-dom';
-import {getBillsByPolitician, getPoliticianById, getCosponsoredBills} from './../api/api';
+import {getBillsByPolitician, getCosponsoredBills, PropublicaApi} from './../api/api';
 import { TwitterTimelineEmbed } from 'react-twitter-embed';
 import LoadingSpinner from './../common/LoadingSpinner';
 import PoliticianBillboard from './PoliticianBillboard';
 import EmptyPolBillboard from './../empty-components/EmptyPolBillboard';
-import {repeatingBills, whatsASponsor} from './../modalMessages';
-import Modal from './../common/Modal';
 import VotesAndSponsoredBills from './../votes/VotesAndSponsoredBills';
 import ContributionList from './../contributions/ContributionList';
 
@@ -22,7 +20,8 @@ const PoliticianDetails = () => {
 
     useEffect(() => {
         async function getBills() {
-            const p = await getPoliticianById(id);
+            // const p = await getPoliticianById(id);
+            const p = await PropublicaApi.getPoliticianById(id);
             const resp = await getBillsByPolitician(id);
             const csResp = await getCosponsoredBills(id);
             setcosponsoredBills(csResp);

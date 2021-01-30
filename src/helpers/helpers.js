@@ -68,9 +68,16 @@ function moneyFormatter(num, idx=num.length) {
           return moneyFormatter(num, idx);
     };
     return '$' + num; 
+};
+
+
+/**Looks at Array of offices returned from user Location. Used to see if Location specific enough to include Congressional District*/
+
+const checkForRep = (arr, office) => {
+    return arr.data['offices'].filter(o => o.name === `U.S. ${office}`)
 }
 
-export {formatVotes, formatBillId, isEmpty, getStateAndCd, slimItDown, dateTimeFormatter, moneyFormatter};
+export {formatVotes, formatBillId, isEmpty, getStateAndCd, slimItDown, dateTimeFormatter, moneyFormatter, checkForRep};
 
     // while(arr.length) {
     //     if(action_type === "IntroReferral") {

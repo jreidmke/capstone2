@@ -1,229 +1,159 @@
 import axios from 'axios';
-import { formatVotes, getStateAndCd} from './../helpers/helpers';
+import { formatVotes, getStateAndCd, checkForRep } from './../helpers/helpers';
 import {googleCivicDataKey, mapboxKey, propublicaKey, crpKey} from './../keys';
 
-
-const baseUrlGoogle = `https://www.googleapis.com/civicinfo/v2/representatives`;
-
+//BASE URL's
+const googleBaseUrl = `https://www.googleapis.com/civicinfo/v2/representatives`;
 const propublicaBaseUrl = `https://api.propublica.org/`
-
 const mapboxBaseUrl = 'https://api.mapbox.com/geocoding/v5/mapbox.places/';
-
 const crpBaseUrl = 'https://www.opensecrets.org/api/';
 
-const getPoliticiansByOcdDivId = async(ocdDivId) => {
-    let sens, rep;
-    let oneRepStates = ['ak', 'de', 'mt', 'nd', 'sd', 'vt', 'wy']
-    const ocdDivIdObj = getStateAndCd(ocdDivId);
-    if('cd' in ocdDivIdObj) {
-        rep = await getRepByOcdDiv(ocdDivIdObj, ocdDivIdObj.cd);
-    } else if(!('cd' in ocdDivIdObj) && oneRepStates.indexOf(ocdDivIdObj.state) !== -1) {
-        rep = await getRepByOcdDiv(ocdDivIdObj);
+//PropublicaApi class created to reduce redundant code
+
+class PropublicaApi {
+
+    /**Generic Propublic API Request */
+    static async request(endpoint, method='get') {
+        console.debug("API Call:", endpoint, method);
+
+        const url=`${propublicaBaseUrl}${endpoint}`;
+        headers = { 'X-API-Key': propublicaKey }; 
+        try {
+            return(await axios({url, method, headers})).data; 
+        } catch (error) {
+            console.error("API Error:", error.response);
+            let msg = error.response.data.error.message;
+            throw Array.isArray(message) ? message : [message]; 
+        }
+    };
+
+    /**GET POLITICIAN METHODS*/
+
+    static async getPoliticianById(id) {
+        const res = await this.request(`congress/v1/members/${id}.json`); 
+        return res[results][0]; 
+    }; 
+
+    //OcdDiv is string with State and District number
+    static async getRepByOcdDiv(obj, cd=1) {
+        const res = await this.request(`congress/v1/members/house/${obj.state}/${cd}/current.json`);
+        return res[results][0];
+    };
+
+    //OcdDiv is string with State and District number
+    static async getSenByOcdDiv(obj) {
+        const res = await this.request(`congress/v1/members/senate/${obj.state}/current.json`);
+        return res[results];
+    };
+
+    /**Returns All Politicians representing specified OCD string */
+    static async getPoliticiansByOcdDiv(ocdDiv) {
+        let sens, rep;
+
+        //some states with smaller Pop. only have one rep for the entire state
+        let oneRepStates = ['ak', 'de', 'mt', 'nd', 'sd', 'vt', 'wy'];
+        const ocdDivIdObj = getStateAndCd(ocdDivId);
+
+        //if congressional district is in OCD String
+        if('cd' in ocdDivIdObj) {
+            rep = await this.getRepByOcdDiv(ocdDivIdObj, ocdDivIdObj.cd);
+        } 
+
+        //if congressional district is NOT in OCD string AND the state in question only has one rep
+        else if(!('cd' in ocdDivIdObj) && oneRepStates.indexOf(ocdDivIdObj.state) !== -1) {
+            rep = await this.getRepByOcdDiv(ocdDivIdObj);
+        }
+
+        sens = await this.getSenByOcdDiv(ocdDivIdObj);
+        return [sens, rep];
     }
-    sens = await getSenByOcdDiv(ocdDivIdObj);
-    return [sens, rep];
-}
+
+    static async getStatementsByPolitician(polId) {
+        const res = await this.request(`congress/v1/members/${polId}/statements/116.json`);
+        return res.results; 
+    };
+    
+    static async getVotesByPolitician(id) {
+        const res = await this.request(`congress/v1/members/${id}/votes.json`);
+        return formatVotes(res.data); 
+    };
+
+    static async getAllPoliticians(chamber) {
+        const res = await this.request(`congress/v1/117/${chamber}/members.json`);
+        return res; 
+    };
+
+    /**GET BILL METHODS */
+    
+    static async getBillData(id) {
+        id = id.split('-');
+        const res = await this.request(`congress/v1/${id[1]}/bills/${id[0]}.json`);
+        return res.results[0]; 
+    };
+
+    static async getBillCosponsers(id) {
+        id = id.split('-');
+        const res = await this.request(`congress/v1/${id[1]}/bills/${id[0]}/cosponsors.json`);
+        return res.results[0]; 
+    };
+
+    static async getRecentBills(status) {
+        const res = await this.request(`congress/v1/117/both/bills/${status}.json`);
+        return res.results[0].bills;
+    };
+
+    static async searchBills(term) {
+        const res = await this.request(`congress/v1/bills/search.json?query=${term}`);
+        if(!res.results[0].bills.length) return [];
+        return res.results[0].bills;
+    };
+
+    static async getCosponsoredBills(id) {
+        const res = await this.request(`congress/v1/members/${id}/bills/cosponsored.json`);
+        return res.results[0].bills; 
+    };
+
+    /**GET NOMINATION METHODS */
+
+    static async getNominationData(nomId) {
+        const res = await this.request(`congress/116/nominees/${nomId}.json`);
+        return res.results[0]; 
+    }; 
+}; 
+
+
+
+/*OTHER API CALLS (GOOGLE CIVIC DATA, MAPBOX AND CRB)*/
+
+
+
+/** Uses the Google Civic Data API to Return an OCD String via user location 
+ * 
+ * OCD Strings show the State and (if location specific enough) the Congressional Disctrict (ex: )
+*/
 
 const getOCDStringByAddress = async(address) => {
-    const resp = await axios.get(`${baseUrlGoogle}?address=${address}&levels=country&key=${googleCivicDataKey}`);
+    const resp = await axios.get(`${googleBaseUrl}?address=${address}&levels=country&key=${googleCivicDataKey}`);
+
+    /**checkForRep looks to see if location data was specific enough to include congressional district */
     let officeArray = checkForRep(resp, 'Representative');
+
+    /**If not, it uses the OCD String from the Senator */
     if(!officeArray.length) officeArray = checkForRep(resp, 'Senator');
+
+    /** Encodes slashes for URL use*/
     return officeArray[0].divisionId.replaceAll('/', '%2F');
-}
+}; 
 
-const checkForRep = (arr, office) => {
-    return arr.data['offices'].filter(o => o.name === `U.S. ${office}`)
-}
-
-const getRepByOcdDiv = async(obj, cd=1) => {
-    const resp = await axios.get(`${propublicaBaseUrl}congress/v1/members/house/${obj.state}/${cd}/current.json`, {
-        headers: {
-            'X-API-Key': propublicaKey
-        }
-    });
-    return resp.data.results[0];
-} 
-
-const getSenByOcdDiv = async(obj) => {
-    const resp = await axios.get(`${propublicaBaseUrl}congress/v1/members/senate/${obj.state}/current.json`, {
-        headers: {
-            'X-API-Key': propublicaKey
-        }
-    });
-    return resp.data.results; 
-}
-
-const getPoliticianById = async(id) => {
-    const resp = await axios.get(`${propublicaBaseUrl}congress/v1/members/${id}.json`, {
-        headers: {
-            'X-API-Key': propublicaKey
-        }
-    });
-    return resp.data['results'][0]; 
-}
-
-const getBillsByPolitician = async(id) => {
-    const resp = await axios.get(`${propublicaBaseUrl}congress/v1/members/${id}/votes.json`, {
-        headers: {
-            'X-API-Key': propublicaKey
-        }
-    });
-    const voteArr = formatVotes(resp.data);
-    return voteArr;
-}
-
-const getStatementsByPolitician = async(polId) => {
-    const resp = await axios.get(`${propublicaBaseUrl}congress/v1/members/${polId}/statements/116.json`, {
-        headers: {
-            'X-API-Key': propublicaKey
-        }
-    });
-    return resp.data.results;
-}
-
-const getBillData = async(id) => {
-    id = id.split('-');
-    const resp = await axios.get(`${propublicaBaseUrl}congress/v1/${id[1]}/bills/${id[0]}.json`, {
-        headers: {
-            'X-API-Key': propublicaKey
-        }
-    });
-    console.log(resp);
-    return resp.data['results'][0];
-}
-
-const getBillCosponsers = async(id) => {
-    id = id.split('-');
-    const resp = await axios.get(`${propublicaBaseUrl}congress/v1/${id[1]}/bills/${id[0]}/cosponsors.json`, {
-        headers: {
-            'X-API-Key': propublicaKey
-        }
-    });
-    return resp.data['results'][0];
-}
-
-const getNominationData = async(nomId) => {
-    const id = nomId.split('-');
-    console.log(id);
-    const resp = await axios.get(`https://api.propublica.org/congress/${id[1]}/116/nominees/${id[0]}.json`, {
-        headers: {
-            'X-API-Key': propublicaKey
-        }
-    });
-    return resp.data['results'][0];
-}
-
-const getAllPoliticians = async(chamber) => {
-    const resp = await axios.get(`${propublicaBaseUrl}congress/v1/116/${chamber}/members.json`, {
-        headers: {
-            'X-API-Key': propublicaKey
-        }
-    });
-    return resp.data;
-}
+/**Uses Naviagtion API data to retrieve nearest street address from MapBox Api*/
 
 const getAddressByCoords = async(lat, lon) => {
     const resp = await axios.get(`${mapboxBaseUrl}${lon},${lat}.json?access_token=${mapboxKey}`);
     return resp.data.features[0].place_name;
 }
 
-const getRecentBills = async(status) => {
-    const resp = await axios.get(`https://api.propublica.org/congress/v1/117/both/bills/${status}.json`, {
-        headers: {
-            'X-API-Key': propublicaKey
-        }
-    });
-    return resp.data.results[0].bills; 
-}
-
-const searchBills = async(term) => {
-    const resp = await axios.get(`https://api.propublica.org/congress/v1/bills/search.json?query=${term}`, {
-        headers: {
-            'X-API-Key': propublicaKey
-        }
-    });
-    if(!resp.data.results[0].bills.length) return []; 
-    return resp.data.results[0].bills; 
-}
-
-const getCosponsoredBills = async(id) => {
-    const resp = await axios.get(`${propublicaBaseUrl}congress/v1/members/${id}/bills/cosponsored.json`, {
-        headers: {
-            'X-API-Key': propublicaKey
-        }
-    });
-    return resp.data.results[0].bills
-};
-
 const getCampaignContributions = async(id) => {
     const resp = await axios.get(`${crpBaseUrl}?method=candContrib&cid=${id}&cycle=2020&apikey=${crpKey}&output=json`)
-}
+};
 
-export { getAllPoliticians, getBillsByPolitician, getBillData, getBillCosponsers, getStatementsByPolitician, getNominationData,  getPoliticianById, getAddressByCoords, getOCDStringByAddress, getPoliticiansByOcdDivId, getRecentBills, searchBills, getCosponsoredBills}
-
-
-// const getReps = async(address) => {
-//     const resp = await axios.get(`${baseUrlGoogle}?address=${address}&levels=country&key=${googleCivicDataKey}`);
-//     let sens = parsePols(resp.data, "Senator");
-//     const rep = parsePols(resp.data, "Representative");
-//     return rep === undefined ? [sens] : [sens, rep];
-// }
-
-// const getIdByNameAndDiv = async(name, divisionId, chamber) => {
-//     const resp = await axios.get(`http://localhost:3001/pols/${name}/${divisionId}/${chamber}`);
-//     return resp.data.id;
-// }
-
-//come back and make this a class. like they did in the jobly one. 
-// const getAllSenators = async() => {
-//     // const resp = await axios.get(`https://api.propublica.org/congress/v1/116/senate/members.json`, {
-//     //     headers: {
-//     //         'X-API-Key': propublicaKey
-//     //     }
-//     // });
-//     // console.log(data['results'][0].members);
-//     // return data;
-    
-//     const items = data['results'][0].members
-//     const replacer = (key, value) => value === null ? '' : value // specify how you want to handle null values here
-//     const header = Object.keys(items[0])
-//     const csv = [
-//       header.join(','), // header row first
-//       ...items.map(row => header.map(fieldName => JSON.stringify(row[fieldName], replacer)).join(','))
-//     ].join('\r\n')
-    
-//     console.log(csv)
-// }
-
-// import axios from 'axios';
-
-// const googleBaseUrl = `https://www.googleapis.com/civicinfo/v2/representatives`;
-// const googleKey = `AIzaSyCWLce2CCx2VltxV-HGag2af7bv8SN9E2s`;
-
-// const propublicaBaseUrl = `https://api.propublica.org/`
-// const propublicaKey = 'GqAugiG0q8i70M5PkvHF0s1JoySk7bYNPPGpQeNi';
-
-
-// const mapboxBaseUrl = 'https://api.mapbox.com/geocoding/v5/mapbox.places/';
-// const mapboxKey = 'pk.eyJ1IjoianJlaWRta2UiLCJhIjoiY2trMnM4YW01MTIzZDJucWo3cmtleGI2diJ9.QCGudPD8mXjeVQmiiurL8g';
-
-// class Api {
-//     static async googleCivicDataRequest(endpoint) {
-//         console.debug("Google Civic Data API Call:", endpoint);
-//         const url = `${googleBaseUrl}/${endpoint}?key=${googleKey}`;
-//         try {
-//             return (await axios({url, method})).data;
-//         } catch (error) {
-//             console.error("API Error:", error.response);
-//             let msg = error.response.data.error.message;
-//             throw Array.isArray(msg) ? msg : [msg];
-//         }      
-//     }
-
-//     static async propublicaDataRequest(endpoint) {
-//         console.debug("Propublica Congressional Data API Call:", endpoint);
-//         const url = `${propublicaBaseUrl}/${endpoint}`
-
-//     }
-
-// }
+export { getAddressByCoords, getOCDStringByAddress, PropublicaApi }

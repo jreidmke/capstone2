@@ -11,6 +11,28 @@ const mapboxBaseUrl = 'https://api.mapbox.com/geocoding/v5/mapbox.places/';
 
 const crpBaseUrl = 'https://www.opensecrets.org/api/';
 
+class PropublicaApi {
+    static async request(endpoint, method='get') {
+        console.debug("API Call:", endpoint, method);
+
+        const url=`${propublicaBaseUrl}${endpoint}`;
+        const headers = { 'X-API-Key': propublicaKey }; 
+        try {
+            return(await axios({url, method, headers})).data; 
+        } catch (error) {
+            console.error("API Error:", error.response);
+            let message = error.response.data.error.message;
+            throw Array.isArray(message) ? message : [message]; 
+        }
+    }
+
+    static async getPoliticianById(id) {
+        const res = await this.request(`congress/v1/members/${id}.json`); 
+        return res['results'][0]; 
+    }
+}
+
+
 const getPoliticiansByOcdDivId = async(ocdDivId) => {
     let sens, rep;
     let oneRepStates = ['ak', 'de', 'mt', 'nd', 'sd', 'vt', 'wy']
@@ -56,14 +78,14 @@ const getSenByOcdDiv = async(obj) => {
     return resp.data.results; 
 }
 
-const getPoliticianById = async(id) => {
-    const resp = await axios.get(`${propublicaBaseUrl}congress/v1/members/${id}.json`, {
-        headers: {
-            'X-API-Key': propublicaKey
-        }
-    });
-    return resp.data['results'][0]; 
-}
+// const getPoliticianById = async(id) => {
+//     const resp = await axios.get(`${propublicaBaseUrl}congress/v1/members/${id}.json`, {
+//         headers: {
+//             'X-API-Key': propublicaKey
+//         }
+//     });
+//     return resp.data['results'][0]; 
+// }
 
 const getBillsByPolitician = async(id) => {
     const resp = await axios.get(`${propublicaBaseUrl}congress/v1/members/${id}/votes.json`, {
@@ -117,7 +139,7 @@ const getNominationData = async(nomId) => {
 }
 
 const getAllPoliticians = async(chamber) => {
-    const resp = await axios.get(`${propublicaBaseUrl}congress/v1/116/${chamber}/members.json`, {
+    const resp = await axios.get(`${propublicaBaseUrl}congress/v1/117/${chamber}/members.json`, {
         headers: {
             'X-API-Key': propublicaKey
         }
@@ -162,7 +184,7 @@ const getCampaignContributions = async(id) => {
     const resp = await axios.get(`${crpBaseUrl}?method=candContrib&cid=${id}&cycle=2020&apikey=${crpKey}&output=json`)
 }
 
-export { getAllPoliticians, getBillsByPolitician, getBillData, getBillCosponsers, getStatementsByPolitician, getNominationData,  getPoliticianById, getAddressByCoords, getOCDStringByAddress, getPoliticiansByOcdDivId, getRecentBills, searchBills, getCosponsoredBills}
+export { getAllPoliticians, getBillsByPolitician, getBillData, getBillCosponsers, getStatementsByPolitician, getNominationData, getAddressByCoords, getOCDStringByAddress, getPoliticiansByOcdDivId, getRecentBills, searchBills, getCosponsoredBills, PropublicaApi}
 
 
 // const getReps = async(address) => {
