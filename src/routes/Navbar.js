@@ -1,6 +1,3 @@
-import './Navbar.css';
-import { NavLink} from 'react-router-dom';
-import Dropdown from 'react-bootstrap/Dropdown'
 import { GiCongress } from 'react-icons/gi'; 
 import AddressForm from './../searches/AddressForm';
 import BillForm from './../searches/BillForm';
@@ -11,7 +8,7 @@ import Form from 'react-bootstrap/Form';
 
 const NavBar = () => {
     return(
-        <Navbar bg="light" expand="lg">
+        <Navbar bg="light">
         <Navbar.Brand href="/home">
             <GiCongress className='float-left m-2' size='5em'/>
         </Navbar.Brand>

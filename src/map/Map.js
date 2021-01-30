@@ -13,7 +13,7 @@ import repSeal from './../images/repSeal.png';
 import senSeal from './../images/senSeal.png';
 import {googleMapsKey} from './../keys';
 
-const MapContainer = ({handleFindPols}) => {
+const MapContainer = () => {
   const [center, setCenter] = useState({
     lat: 38.9072,
     lng: -77.0369
@@ -90,14 +90,16 @@ const MapContainer = ({handleFindPols}) => {
 
             <InfoWindow
               position={markerPosition}
-              visible={senators}>
+              visible={senators} id='info-window'>
                 
                 <Row><Col><h3>Senators</h3></Col></Row>
 
-                <Row>    
+                <Row> 
+                <Col>   
                   {senators ? senators.map(s => (
-                    <Col><InfoCard pol={s} chamber='senate'/></Col>
+                     <InfoCard pol={s} chamber='senate'/>
                     )) : <LoadingSpinner/>}
+                    </Col>
                 </Row>
 
                 <hr/>
@@ -109,7 +111,7 @@ const MapContainer = ({handleFindPols}) => {
                   
                 
             </InfoWindow>
-
+    
           </Map>
         </Col>
         <Col/>

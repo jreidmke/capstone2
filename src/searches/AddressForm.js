@@ -40,7 +40,6 @@ const AddressForm = ({isNavbar}) => {
 
     return(
         <form>
-            {error.length ? <Alert variant='danger'>{error}</Alert> : ''}
             <input
             type='text'
             placeholder={isNavbar ? "Search Address" : "123 Pizza St. Milwaukee, WI"}
@@ -51,6 +50,7 @@ const AddressForm = ({isNavbar}) => {
             className={isNavbar ? "isNavbar" : "isNotNavbar"}
             />
             <Button onClick={handleSubmit} variant='info' className={isNavbar ? 'ml-2 mb-1': 'mb-3 ml-2'}>{isNavbar ? "Go" : "Submit"}</Button>
+            <br/>{error.length ? <Alert variant='danger'>{error}</Alert> : ''}
         </form>
     )
 }
