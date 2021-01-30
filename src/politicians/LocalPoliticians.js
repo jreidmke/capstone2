@@ -25,7 +25,7 @@ const LocalPoliticians = () => {
             setRepresentative(resp[1]);
         }
         getPoliticians()
-    }, []);
+    }, [ocdDivId]);
 
 
     return(

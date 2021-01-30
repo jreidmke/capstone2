@@ -1,7 +1,8 @@
-import {useState} from 'react';
+import {useEffect, useState} from 'react';
 import { getOCDStringByAddress} from './../api/api';
 import {useHistory} from 'react-router-dom';
 import Button from 'react-bootstrap/Button'; 
+import Alert from 'react-bootstrap/Alert';
 import './BillForm.css'; 
 
 const AddressForm = ({isNavbar}) => {
@@ -9,6 +10,14 @@ const AddressForm = ({isNavbar}) => {
     const [formData, setFormData] = useState({
         address: ""
     });
+    const [error, setError] = useState([]);
+
+    useEffect(() => {
+        const timeout = setTimeout(() => {
+            setError([]);
+        }, 3000);
+        return () => clearTimeout(timeout);
+    }, [error]); 
 
     const handleChange = e => {
         const {name, value} = e.target;
@@ -21,11 +30,17 @@ const AddressForm = ({isNavbar}) => {
     const handleSubmit = async(e) => {
         e.preventDefault();
         const resp = await getOCDStringByAddress(formData.address);
-        history.push(`/pols/${resp}`);
+        if(resp.slice(0, 3) === 'ocd') {
+            history.push(`/pols/${resp}`);
+        } else {
+            setError(resp);
+        }
+
     };
 
     return(
         <form>
+            {error.length ? <Alert variant='danger'>{error}</Alert> : ''}
             <input
             type='text'
             placeholder={isNavbar ? "Search Address" : "123 Pizza St. Milwaukee, WI"}

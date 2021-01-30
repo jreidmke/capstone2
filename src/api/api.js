@@ -133,17 +133,24 @@ class PropublicaApi {
 */
 
 const getOCDStringByAddress = async(address) => {
-    const resp = await axios.get(`${googleBaseUrl}?address=${address}&levels=country&key=${googleCivicDataKey}`);
+    try {
+        const resp = await axios.get(`${googleBaseUrl}?address=${address}&levels=country&key=${googleCivicDataKey}`);
 
-    /**checkForRep looks to see if location data was specific enough to include congressional district */
-    let officeArray = checkForRep(resp, 'Representative');
+        /**checkForRep looks to see if location data was specific enough to include congressional district */
+        let officeArray = checkForRep(resp, 'Representative');
 
-    /**If not, it uses the OCD String from the Senator */
-    if(!officeArray.length) officeArray = checkForRep(resp, 'Senator');
+        /**If not, it uses the OCD String from the Senator */
+        if(!officeArray.length) officeArray = checkForRep(resp, 'Senator');
 
-    /** Encodes slashes for URL use*/
-    return officeArray[0].divisionId.replaceAll('/', '%2F');
+        /** Encodes slashes for URL use*/
+        return officeArray[0].divisionId.replaceAll('/', '%2F');
+    } catch (error) {
+        console.error("API Error:", error.response);
+        let message = error.response.data.error.message;
+        return message;        
+    }
 }; 
+
 
 /**Uses Naviagtion API data to retrieve nearest street address from MapBox Api*/
 
