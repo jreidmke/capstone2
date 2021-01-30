@@ -21,7 +21,7 @@ const PoliticianDetails = () => {
     useEffect(() => {
         async function getBills() {
             const p = await PropublicaApi.getPoliticianById(id);
-            const resp = await PropublicaApi.getVotessByPolitician(id);
+            const resp = await PropublicaApi.getVotesByPolitician(id);
             const csResp = await PropublicaApi.getCosponsoredBills(id);
             setcosponsoredBills(csResp);
             setPolitician(p);

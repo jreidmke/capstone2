@@ -19,14 +19,7 @@ const BillForm = ({isNavbar}) => {
 
     const handleSubmit = async(e) => {
         e.preventDefault();
-        // history.length = 0; 
-        // history.replace('/'); 
-        console.log(history)
-        // history.push({
-        //     pathname: `/bills/search/${formData.term}`,
-        //     search: ''
-        // });
-        history.push(`/bills/search/`, {params: formData.term}); 
+        history.push(`/bills/search/${formData.term}`); 
     };
 
     return(
