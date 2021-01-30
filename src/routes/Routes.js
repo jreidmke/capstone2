@@ -1,6 +1,5 @@
-import { Route, Switch } from "react-router-dom";
+import { Redirect, Route, Switch } from "react-router-dom";
 import Bill from './../bills/BillDetails';
-// import Nominee from './Nominee';
 import PoliticianList from "./../politicians/PoliticianList";
 import LandingPage from './../homepage/LandingPage';
 import LocalPoliticians from './../politicians/LocalPoliticians';
@@ -54,7 +53,7 @@ const Routes = () => {
                     <NomineeDetails/>
                 </Route>
 
-               
+               <Redirect path='/' />
 
             </Switch>
         </div>

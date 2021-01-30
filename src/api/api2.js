@@ -35,36 +35,36 @@ class PropublicaApi {
     }; 
 
     //OcdDiv is string with State and District number
-    static async getRepByOcdDiv(obj, cd=1) {
+    static async getRepByOcd(obj, cd=1) {
         const res = await this.request(`congress/v1/members/house/${obj.state}/${cd}/current.json`);
         return res[results][0];
     };
 
     //OcdDiv is string with State and District number
-    static async getSenByOcdDiv(obj) {
+    static async getSenByOcd(obj) {
         const res = await this.request(`congress/v1/members/senate/${obj.state}/current.json`);
         return res[results];
     };
 
     /**Returns All Politicians representing specified OCD string */
-    static async getPoliticiansByOcdDiv(ocdDiv) {
+    static async getPoliticiansByOcd(ocdDiv) {
         let sens, rep;
 
         //some states with smaller Pop. only have one rep for the entire state
         let oneRepStates = ['ak', 'de', 'mt', 'nd', 'sd', 'vt', 'wy'];
-        const ocdDivIdObj = getStateAndCd(ocdDivId);
+        const ocdDivObj = getStateAndCd(ocdDiv);
 
         //if congressional district is in OCD String
-        if('cd' in ocdDivIdObj) {
-            rep = await this.getRepByOcdDiv(ocdDivIdObj, ocdDivIdObj.cd);
+        if('cd' in ocdDivObj) {
+            rep = await this.getRepByOcd(ocdDivObj, ocdDivObj.cd);
         } 
 
         //if congressional district is NOT in OCD string AND the state in question only has one rep
-        else if(!('cd' in ocdDivIdObj) && oneRepStates.indexOf(ocdDivIdObj.state) !== -1) {
-            rep = await this.getRepByOcdDiv(ocdDivIdObj);
+        else if(!('cd' in ocdDivObj) && oneRepStates.indexOf(ocdDivObj.state) !== -1) {
+            rep = await this.getRepByOcd(ocdDivObj);
         }
 
-        sens = await this.getSenByOcdDiv(ocdDivIdObj);
+        sens = await this.getSenByOcd(ocdDivObj);
         return [sens, rep];
     }
 

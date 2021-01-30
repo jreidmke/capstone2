@@ -1,6 +1,7 @@
 import {useState, useEffect} from 'react';
 import LoadingSpinner from '../common/LoadingSpinner';
-import {getBillCosponsers, PropublicaApi} from './../api/api'; 
+// import {getBillCosponsers, PropublicaApi} from './../api/api'; 
+import {PropublicaApi} from './../api/api2';
 import CosponsorRow from './CosponsorRow';
 import Card from 'react-bootstrap/Card';
 import Container from 'react-bootstrap/Container';
@@ -17,7 +18,7 @@ const CosponsorCardBody = ({billId}) => {
 
     useEffect(() => {
         async function getSponsors() {
-            const resp = await getBillCosponsers(billId);
+            const resp = await PropublicaApi.getBillCosponsers(billId);
             const sponsorResp = await PropublicaApi.getPoliticianById(resp.sponsor_id);
             setSponsor(sponsorResp);
             setCosponsors(resp.cosponsors); 
@@ -35,7 +36,7 @@ const CosponsorCardBody = ({billId}) => {
                     <Col>
                         <h3>Co-Sponsors</h3>
 
-                        {cosponsors ? cosponsors.slice(0, 6).map(cs => (
+                        {cosponsors && cosponsors.length ? cosponsors.slice(0, 6).map(cs => (
                             <CosponsorRow cosponsor={cs}/>
                             )) : <LoadingSpinner/>}
 

@@ -3,7 +3,8 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import {useState, useEffect} from 'react';
 import {useParams} from 'react-router-dom';
-import {getPoliticiansByOcdDivId} from './../api/api';
+// import {getPoliticiansByOcdDivId} from './../api/api';
+import {PropublicaApi} from './../api/api2';
 import LoadingSpinner from './../common/LoadingSpinner';
 import {getStateAndCd} from './../helpers/helpers';
 import YourSenators from './YourSenators';
@@ -19,7 +20,7 @@ const LocalPoliticians = () => {
 
     useEffect(() => {
         async function getPoliticians() {
-            const resp = await getPoliticiansByOcdDivId(ocdDivId);
+            const resp = await PropublicaApi.getPoliticiansByOcd(ocdDivId);
             setSentators(resp[0]);
             if(!resp[1]) return;
             setRepresentative(resp[1]);

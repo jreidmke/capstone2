@@ -1,6 +1,6 @@
 import {useState, useEffect} from 'react';
 import PoliticianCard from './PoliticianCard';
-import {getAllPoliticians} from './../api/api';
+import {PropublicaApi} from './../api/api2';
 import CardDeck from 'react-bootstrap/CardDeck';
 import Container from 'react-bootstrap/Container';
 import Col from 'react-bootstrap/Col';
@@ -10,13 +10,13 @@ const PoliticianList = ({chamber}) => {
 
     useEffect(() => {
         async function getPols() {
-            const resp = await getAllPoliticians(chamber);
+            const resp = await PropublicaApi.getAllPoliticians(chamber);
             setPoliticians(resp.results[0].members.sort((a, b) => {
                 let textA = a.state.toUpperCase();
                 let textB = b.state.toUpperCase();
                 return (textA < textB) ? -1 : (textA > textB) ? 1 : 0;
             }));
-        }
+        }; 
         getPols();
     }, [chamber]);
 

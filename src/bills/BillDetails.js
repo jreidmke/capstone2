@@ -1,6 +1,7 @@
 import {useState, useEffect} from 'react';
 import {useParams} from 'react-router-dom';
-import {getBillData} from './../api/api';
+// import {getBillData} from './../api/api';
+import {PropublicaApi} from './../api/api2';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -22,10 +23,10 @@ const BillDetails = () => {
 
     useEffect(() => {
         async function getBill() {
-            const resp = await getBillData(billId);
+            const resp = await PropublicaApi.getBillData(billId);
             setBill(resp);
             setIsEnacted(resp.enacted); 
-        }
+        };
         getBill(); 
     }, []);
 

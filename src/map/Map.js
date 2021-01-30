@@ -1,6 +1,6 @@
 import { Map, GoogleApiWrapper, Marker, InfoWindow } from 'google-maps-react';
 import {useEffect, useState} from 'react';
-import { getAddressByCoords, getOCDStringByAddress, getPoliticiansByOcdDivId } from '../api/api';
+import {PropublicaApi, getAddressByCoords, getOCDStringByAddress } from './../api/api2'; 
 import LoadingSpinner from '../common/LoadingSpinner'; 
 import InfoCard from './InfoCard';
 import Row from 'react-bootstrap/Row';
@@ -27,7 +27,7 @@ const MapContainer = ({handleFindPols}) => {
   useEffect(() => {
     async function getPols() {
       const ocdString = await getOCDStringByAddress(address);
-      const pols = await getPoliticiansByOcdDivId(ocdString);
+      const pols = await PropublicaApi.getPoliticiansByOcd(ocdString);
       setSenators(pols[0]);
       if(!pols[1]) return;
       setRep(pols[1]); 

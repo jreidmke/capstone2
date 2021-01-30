@@ -1,5 +1,6 @@
 import {useState} from 'react';
 import {getOCDStringByAddress} from './../api/api';
+import {PropublicaApi} from './../api/api2';
 import {useHistory} from 'react-router-dom';
 import Button from 'react-bootstrap/Button'; 
 import './BillForm.css'; 
@@ -20,7 +21,7 @@ const AddressForm = ({isNavbar}) => {
 
     const handleSubmit = async(e) => {
         e.preventDefault();
-        const resp = await getOCDStringByAddress(formData.address);
+        const resp = await PropublicaApi.getOCDStringByAddress(formData.address);
         history.push(`/pols/${resp}`);
     };
 

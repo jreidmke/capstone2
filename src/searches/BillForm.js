@@ -18,7 +18,6 @@ const BillForm = ({isNavbar}) => {
     };
 
     const handleSubmit = async(e) => {
-        console.log("FUCK")
         e.preventDefault();
         // history.length = 0; 
         // history.replace('/'); 

@@ -3,7 +3,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import {useState, useEffect} from 'react';
 import {useParams} from 'react-router-dom';
-import {getBillsByPolitician, getCosponsoredBills, PropublicaApi} from './../api/api';
+import {PropublicaApi} from './../api/api2';
 import { TwitterTimelineEmbed } from 'react-twitter-embed';
 import LoadingSpinner from './../common/LoadingSpinner';
 import PoliticianBillboard from './PoliticianBillboard';
@@ -20,10 +20,9 @@ const PoliticianDetails = () => {
 
     useEffect(() => {
         async function getBills() {
-            // const p = await getPoliticianById(id);
             const p = await PropublicaApi.getPoliticianById(id);
-            const resp = await getBillsByPolitician(id);
-            const csResp = await getCosponsoredBills(id);
+            const resp = await PropublicaApi.getVotessByPolitician(id);
+            const csResp = await PropublicaApi.getCosponsoredBills(id);
             setcosponsoredBills(csResp);
             setPolitician(p);
             setRole(p.roles[0]);
@@ -52,17 +51,6 @@ const PoliticianDetails = () => {
 
                     <br/>
 
-            {/* <Row>
-                <Col>
-                    {politician && role ? <h4>Recent Votes from {role.title} {politician.last_name}<Modal message={repeatingBills}/></h4> : ""}
-                    {bills ? <VoteList votes={bills}/> : <LoadingSpinner/>}
-                </Col>
-                <Col>
-                    {politician && role ? <h4>Cosponored Bills from {role.title} {politician.last_name}<Modal message={whatsASponsor}/></h4> : ""}
-
-                    {cosponsoredBills ? <CosponsoredBills bills={cosponsoredBills}/> : "pizza"}
-                </Col>
-            </Row> */}
 
             <Row>
                 <Col>

@@ -4,13 +4,14 @@ import {useState, useEffect} from 'react';
 import {getRecentBills} from './../api/api';
 import LoadingSpinner from './../common/LoadingSpinner'; 
 import { Link } from 'react-router-dom'; 
+import {PropublicaApi} from './../api/api2';
 
 const RecentBillCardBody = ({status}) => {
     const [bills, setBills] = useState();
 
     useEffect(() => {
         async function getBills() {
-            const resp = await getRecentBills(status);
+            const resp = await PropublicaApi.getRecentBills(status);
             setBills(resp);
         }
         getBills();

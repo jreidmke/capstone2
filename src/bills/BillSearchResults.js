@@ -1,6 +1,7 @@
 import {useParams} from 'react-router-dom';
 import {useState, useEffect} from 'react';
-import {searchBills} from './../api/api';
+// import {searchBills} from './../api/api';
+import {PropublicaApi} from './../api/api2';
 import { Link } from 'react-router-dom';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
@@ -14,10 +15,10 @@ import {useHistory} from 'react-router-dom';
 const BillSearchResults = () => {
     const {searchTerm} = useParams();
     const [results, setResults] = useState();
-    const h = useHistory();
+
     useEffect(() => {
         async function getResults() {
-            const resp = await searchBills(searchTerm);
+            const resp = await PropublicaApi.searchBills(searchTerm);
             setResults(resp);
         }
         getResults();
@@ -44,7 +45,7 @@ const BillSearchResults = () => {
                         <td>Is Active?</td>
                     </tr>
                 </thead>
-                <tbody>{console.log(h)}
+                <tbody>
                     {results ? results.map(r => (
                         <tr>
                             <td><Link to={`/bills/${r.bill_id}`}>{r.bill_id.toUpperCase()}</Link></td>
