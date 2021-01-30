@@ -43,7 +43,7 @@ const LocalPoliticians = () => {
                     </Col>
                     <Col/>
                     <Col>
-                        {represetative ? <PoliticianCard pol={represetative} chamber='house'/> : <Modal message={wheresMyRep}/>}
+                        {represetative ? <PoliticianCard pol={represetative} chamber='house' needLocale={false}/> : <Modal message={wheresMyRep}/>}
                     </Col>
                     <Col/>
                 </Row>

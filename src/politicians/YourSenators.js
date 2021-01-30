@@ -5,10 +5,10 @@ const YourSenators = ({senators}) => {
     return(
             <Carousel indicators={false}>
                 <Carousel.Item>
-                    <PoliticianCard pol={senators[0]} chamber='senate'/>
+                    <PoliticianCard pol={senators[0]} chamber='senate' needLocale={false}/>
                 </Carousel.Item>
                 <Carousel.Item>
-                    <PoliticianCard pol={senators[1]} chamber='senate'/>
+                    <PoliticianCard pol={senators[1]} chamber='senate' needLocale={false}/>
                 </Carousel.Item>
             </Carousel>
     )
