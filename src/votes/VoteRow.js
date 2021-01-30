@@ -9,15 +9,15 @@ const VoteRow = ({bill}) => {
     if(isEmpty(bill.bill) || billId === undefined) {
         link = <td>{bill.question}</td>
         titleTxt = bill.description;
-    } else if(billId.slice(0,2) === 'hr') {
+    } else if(billId.slice(0,2) === 'hr' || billId.slice(0,2) === 'sr') {
         link = <td><Link to={`/bills/${bill.bill.bill_id}`}>{formatBillId(billId)}</Link></td>
         titleTxt = bill.description;
     } else if(billId.slice(0,2) === 'pn') {
-        link = <td><Link to={`/noms/${bill.nomination.number.toUpperCase()}`}>{formatBillId(billId)}</Link></td>
+        link = <td>{formatBillId(billId)}</td>
         titleTxt = bill.description;
     } else {
         link = <td>{bill.question}</td>
-        titleTxt = <td>{`${bill.bill.number}... A quorum is `} <a href='https://www.senate.gov/reference/glossary_term/quorum.htm'>this.</a></td>
+        titleTxt = <td>{bill.question}</td>
     }
 
 
@@ -32,5 +32,5 @@ const VoteRow = ({bill}) => {
 };
 
 export default VoteRow;
-
+{/* <Link to={`/noms/${bill.nomination.number.toUpperCase()}`}></Link> */}
 

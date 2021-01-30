@@ -15,8 +15,6 @@ const getPoliticiansByOcdDivId = async(ocdDivId) => {
     let sens, rep;
     let oneRepStates = ['ak', 'de', 'mt', 'nd', 'sd', 'vt', 'wy']
     const ocdDivIdObj = getStateAndCd(ocdDivId);
-
-
     if('cd' in ocdDivIdObj) {
         sens = await getSenByOcdDiv(ocdDivIdObj);
         rep = await getRepByOcdDiv(ocdDivIdObj, ocdDivIdObj.cd);
@@ -93,6 +91,7 @@ const getBillData = async(id) => {
             'X-API-Key': propublicaKey
         }
     });
+    console.log(resp);
     return resp.data['results'][0];
 }
 
@@ -108,6 +107,7 @@ const getBillCosponsers = async(id) => {
 
 const getNominationData = async(nomId) => {
     const id = nomId.split('-');
+    console.log(id);
     const resp = await axios.get(`https://api.propublica.org/congress/${id[1]}/116/nominees/${id[0]}.json`, {
         headers: {
             'X-API-Key': propublicaKey
@@ -117,8 +117,6 @@ const getNominationData = async(nomId) => {
 }
 
 const getAllPoliticians = async(chamber) => {
-    // const resp = await axios.get(`http://localhost:3001/${chamber}`);
-    // https://api.propublica.org/congress/v1/{congress}/{chamber}/members.json
     const resp = await axios.get(`${propublicaBaseUrl}congress/v1/116/${chamber}/members.json`, {
         headers: {
             'X-API-Key': propublicaKey
@@ -157,7 +155,6 @@ const getCosponsoredBills = async(id) => {
             'X-API-Key': propublicaKey
         }
     });
-    console.log(resp);
     return resp.data.results[0].bills
 };
 

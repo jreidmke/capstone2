@@ -20,7 +20,6 @@ const NomineeDetails = () => {
     return(
         <div>
             {nominee ? <h1>{nominee.description}</h1> : <LoadingSpinner/>}
-
             {nominee ? <NomineeTable nominee={nominee}/> : <LoadingSpinner/>}
         </div>
     )
