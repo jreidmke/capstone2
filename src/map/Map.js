@@ -7,7 +7,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 import './Map.css';
-import Container from 'react-bootstrap/esm/Container';
+import Container from 'react-bootstrap/Container';
 import AddressForm from '../searches/AddressForm';
 import repSeal from './../images/repSeal.png';
 import senSeal from './../images/senSeal.png';

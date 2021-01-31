@@ -7,7 +7,7 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col'; 
 import PoliticianCard from './../politicians/PoliticianCard';
-import ListGroup from 'react-bootstrap/esm/ListGroup';
+import ListGroup from 'react-bootstrap/ListGroup';
 import Collapse from 'react-bootstrap/Collapse';
 
 const CosponsorCardBody = ({billId}) => {

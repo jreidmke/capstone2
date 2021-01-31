@@ -1,0 +1,154 @@
+
+{
+        "bill_id": "hr501-116",
+        "bill_slug": "hr501",
+        "congress": "116",
+        "bill": "H.R.501",
+        "bill_type": "hr",
+        "number": "H.R.501",
+        "bill_uri": "https://api.propublica.org/congress/v1/116/bills/hr501.json",
+        "title": "To amend the Public Health Service Act to reauthorize and enhance the poison center national toll-free number, national media campaign, and grant program, and for other purposes.",
+        "short_title": "Poison Center Network Enhancement Act of 2019",
+        "sponsor_title": "Rep.",
+        "sponsor": "Eliot L. Engel",
+        "sponsor_id": "E000179",
+        "sponsor_uri": "https://api.propublica.org/congress/v1/members/E000179.json",
+        "sponsor_party": "D",
+        "sponsor_state": "NY",
+        "gpo_pdf_uri": null,
+        "congressdotgov_url": "https://www.congress.gov/bill/116th-congress/house-bill/501",
+        "govtrack_url": "https://www.govtrack.us/congress/bills/116/hr501",
+        "introduced_date": "2019-01-11",
+        "active": true,
+        "last_vote": null,
+        "house_passage": "2019-02-25",
+        "senate_passage": null,
+        "enacted": null,
+        "vetoed": null,
+        "cosponsors": 4,
+        "cosponsors_by_party": {
+          "R": 3,
+          "D": 1
+        },
+        "withdrawn_cosponsors": 0,
+        "primary_subject": "Health",
+        "committees": "Senate Health, Education, Labor, and Pensions Committee",
+        "committee_codes": [
+          "SSHR",
+          "HSIF"
+        ],
+        "subcommittee_codes": [
+          "HSIF14"
+        ],
+        "latest_major_action_date": "2019-02-26",
+        "latest_major_action": "Received in the Senate and Read twice and referred to the Committee on Health, Education, Labor, and Pensions.",
+        "house_passage_vote": "2019-02-25",
+        "senate_passage_vote": null,
+        "summary": "Poison Center Network Enhancement Act of 2019 This bill reauthorizes for FY2020-FY2024 and revises the national toll-free phone number, public awareness campaign, and grant program relating to poison control centers.  Among other changes, the bill  supports enhancements of the national toll-free phone number, such as texting capabilities; expands the public awareness campaign to include education about drug misuse; and authorizes poison control centers and professional organizations to use grant funds for preventing and treating the misuse of opioids and other drugs. ",
+        "summary_short": "Poison Center Network Enhancement Act of 2019 This bill reauthorizes for FY2020-FY2024 and revises the national toll-free phone number, public awareness campaign, and grant program relating to poison control centers.  Among other changes, the bill  supports enhancements of the national toll-free phone number, such as texting capabilities; expands the public awareness campaign to include education about drug misuse; and authorizes poison control centers and professional organizations to use gr...",
+        "cbo_estimate_url": null,
+        "versions": [
+          {
+            "status": "Referred in Senate",
+            "title": "RFS",
+            "url": "https://www.govinfo.gov/content/pkg/BILLS-116hr501rfs/xml/BILLS-116hr501rfs.xml",
+            "congressdotgov_url": "https://www.congress.gov/bill/116th-congress/house-bill/501/text/rfs"
+          },
+          {
+            "status": "Engrossed in House",
+            "title": "EH",
+            "url": "https://www.govinfo.gov/content/pkg/BILLS-116hr501eh/xml/BILLS-116hr501eh.xml",
+            "congressdotgov_url": "https://www.congress.gov/bill/116th-congress/house-bill/501/text/eh"
+          },
+          {
+            "status": "Introduced in House",
+            "title": "IH",
+            "url": "https://www.govinfo.gov/content/pkg/BILLS-116hr501ih/xml/BILLS-116hr501ih.xml",
+            "congressdotgov_url": "https://www.congress.gov/bill/116th-congress/house-bill/501/text/ih"
+          }
+        ],
+        "actions": [
+          {
+            "id": 11,
+            "chamber": "Senate",
+            "action_type": "IntroReferral",
+            "datetime": "2019-02-26",
+            "description": "Received in the Senate and Read twice and referred to the Committee on Health, Education, Labor, and Pensions."
+          },
+          {
+            "id": 10,
+            "chamber": "House",
+            "action_type": "Floor",
+            "datetime": "2019-02-25",
+            "description": "Motion to reconsider laid on the table Agreed to without objection."
+          },
+          {
+            "id": 9,
+            "chamber": "House",
+            "action_type": "Floor",
+            "datetime": "2019-02-25",
+            "description": "On motion to suspend the rules and pass the bill Agreed to by voice vote."
+          },
+          {
+            "id": 8,
+            "chamber": "House",
+            "action_type": "Floor",
+            "datetime": "2019-02-25",
+            "description": "DEBATE - The House proceeded with forty minutes of debate on H.R. 501."
+          },
+          {
+            "id": 7,
+            "chamber": "House",
+            "action_type": "Floor",
+            "datetime": "2019-02-25",
+            "description": "Considered under suspension of the rules."
+          },
+          {
+            "id": 6,
+            "chamber": "House",
+            "action_type": "Floor",
+            "datetime": "2019-02-25",
+            "description": "Mr. Engel moved to suspend the rules and pass the bill."
+          },
+          {
+            "id": 5,
+            "chamber": "House",
+            "action_type": "Floor",
+            "datetime": "2019-02-25",
+            "description": "On motion to suspend the rules and pass the bill Agreed to by voice vote. (text: CR H2052-2053)"
+          },
+          {
+            "id": 4,
+            "chamber": "House",
+            "action_type": "Floor",
+            "datetime": "2019-02-25",
+            "description": "Considered under suspension of the rules. (consideration: CR H2052-2053)"
+          },
+          {
+            "id": 3,
+            "chamber": "House",
+            "action_type": "Committee",
+            "datetime": "2019-01-31",
+            "description": "Referred to the Subcommittee on Health."
+          },
+          {
+            "id": 2,
+            "chamber": "House",
+            "action_type": "Committee",
+            "datetime": "2019-01-25",
+            "description": "Referred to the Subcommittee on Health."
+          },
+          {
+            "id": 1,
+            "chamber": "House",
+            "action_type": "IntroReferral",
+            "datetime": "2019-01-11",
+            "description": "Referred to the House Committee on Energy and Commerce."
+          }
+        ],
+        "presidential_statements": [
+        ],
+        "votes": [
+        ]
+}
+    

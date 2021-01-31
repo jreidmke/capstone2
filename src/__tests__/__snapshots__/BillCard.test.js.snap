@@ -1,0 +1,499 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="card"
+  >
+    <h3
+      class="isActive card-header"
+    >
+      <b>
+        Bill Details
+      </b>
+      <span
+        class="float-right badge badge-success"
+      >
+        Bill is Active
+      </span>
+    </h3>
+    <nav
+      class="nav card-header-tabs nav-tabs"
+      role="tablist"
+    >
+      <a
+        aria-selected="false"
+        class="nav-item nav-link"
+        data-rb-event-key="billTimeline"
+        href="#"
+        role="tab"
+      >
+        Bill Timeline
+      </a>
+      <a
+        aria-selected="false"
+        class="nav-item nav-link"
+        data-rb-event-key="lastAction"
+        href="#"
+        role="tab"
+      >
+        Last Action
+      </a>
+      <a
+        aria-selected="false"
+        class="nav-item nav-link"
+        data-rb-event-key="sponsors"
+        href="#"
+        role="tab"
+      >
+        Sponsors
+      </a>
+      <a
+        aria-selected="false"
+        class="nav-item nav-link"
+        data-rb-event-key="links"
+        href="#"
+        role="tab"
+      >
+        Links
+      </a>
+      <a
+        aria-selected="true"
+        class="nav-item nav-link active"
+        data-rb-event-key="text"
+        href="#"
+        role="tab"
+      >
+        Bill Summary
+      </a>
+    </nav>
+    <div
+      class="tab-content"
+    >
+      <div
+        aria-hidden="true"
+        class="fade tab-pane"
+        role="tabpanel"
+      />
+      <div
+        aria-hidden="true"
+        class="fade tab-pane"
+        role="tabpanel"
+      >
+        <img
+          src="flourish.gif"
+          style="width: 10%; height: 10%;"
+        />
+        <div
+          class="card-body"
+        >
+          <div
+            class="card-title h5"
+          >
+            Hover over the Icon to see the date and event.
+          </div>
+          <p
+            class="card-text"
+          >
+            Blue are House events, Green are Senate.
+          </p>
+          <div
+            class="MuiGrid-root Timeline-wrapper-18"
+            style="height: 135px;"
+          >
+            <div
+              class="scrollbar-container ps"
+            >
+              <div
+                class="MuiGrid-root Timeline-container-19"
+              >
+                <div
+                  class="MuiGrid-root"
+                >
+                  <div
+                    class="MuiGrid-root TimelineEvent-container-21"
+                  >
+                    <div
+                      class="MuiGrid-root TimelineEvent-circleContainer-25"
+                    >
+                      <svg
+                        class="TimelineEvent-icon-22 TimelineEvent-iconSimple-23"
+                        fill="currentColor"
+                        height="1em"
+                        stroke="currentColor"
+                        stroke-width="0"
+                        viewBox="0 0 16 16"
+                        width="1em"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          clip-rule="evenodd"
+                          d="M2 6.77l12.33-3.43.67.53v8.6l-.67.53-6.089-1.595a2.16 2.16 0 1 1-4.178-1.095L2 9.77l-.42-.53V7.3L2 6.77zm3.006 3.787a1.13 1.13 0 0 0-.04.242 1.17 1.17 0 0 0 2.288.347l-2.248-.589zM2.58 8.82L14 11.83V4.5L2.58 7.72v1.1z"
+                          fill-rule="evenodd"
+                        />
+                      </svg>
+                      <svg
+                        height="72"
+                        viewBox="0 0 19.05 19.05"
+                        width="72"
+                      >
+                        <g
+                          transform="translate(0 -277.95)"
+                        >
+                          <circle
+                            cx="9.525"
+                            cy="287.475"
+                            fill="lightblue"
+                            r="9.525"
+                            stroke-width="0.193"
+                          />
+                        </g>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="MuiGrid-root"
+                >
+                  <div
+                    class="MuiGrid-root TimelineEvent-container-21"
+                  >
+                    <div
+                      class="MuiGrid-root TimelineEvent-circleContainer-25"
+                    >
+                      <svg
+                        class="TimelineEvent-icon-22 TimelineEvent-iconSimple-23"
+                        fill="currentColor"
+                        height="1em"
+                        stroke="currentColor"
+                        stroke-width="0"
+                        viewBox="0 0 512 512"
+                        width="1em"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M129.75 24.47L21.625 211.655l55.78 32.188L185.532 56.656 129.75 24.47zm55.97 69.25l-75.626 130.874L326.47 349.47l75.592-130.876L185.72 93.72zm83.468.686l-11.22 19.438 84.97 49.03 11.25-19.468-85-49zM434.25 200.22L326.156 387.405l55.78 32.188 108.095-187.188-55.78-32.187zm-270.53 76.905l-11.282 19.53 84.968 49 11.25-19.5-84.937-49.03zm-3.095 45.844L61.312 494.81h67.157l82.28-142.968-50.125-28.875z"
+                        />
+                      </svg>
+                      <svg
+                        height="72"
+                        viewBox="0 0 19.05 19.05"
+                        width="72"
+                      >
+                        <g
+                          transform="translate(0 -277.95)"
+                        >
+                          <circle
+                            cx="9.525"
+                            cy="287.475"
+                            fill="lightblue"
+                            r="9.525"
+                            stroke-width="0.193"
+                          />
+                        </g>
+                      </svg>
+                    </div>
+                    <div
+                      class="MuiGrid-root TimelineEvent-barSimple-29"
+                    />
+                  </div>
+                </div>
+                <div
+                  class="MuiGrid-root"
+                >
+                  <div
+                    class="MuiGrid-root TimelineEvent-container-21"
+                  >
+                    <div
+                      class="MuiGrid-root TimelineEvent-circleContainer-25"
+                    >
+                      <svg
+                        class="TimelineEvent-icon-22 TimelineEvent-iconSimple-23"
+                        fill="currentColor"
+                        height="1em"
+                        stroke="currentColor"
+                        stroke-width="0"
+                        viewBox="0 0 16 16"
+                        width="1em"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M15 1H6c-.55 0-1 .45-1 1v2H1c-.55 0-1 .45-1 1v6c0 .55.45 1 1 1h1v3l3-3h4c.55 0 1-.45 1-1V9h1l3 3V9h1c.55 0 1-.45 1-1V2c0-.55-.45-1-1-1zM9 11H4.5L3 12.5V11H1V5h4v3c0 .55.45 1 1 1h3v2zm6-3h-2v1.5L11.5 8H6V2h9v6z"
+                          fill-rule="evenodd"
+                        />
+                      </svg>
+                      <svg
+                        height="72"
+                        viewBox="0 0 19.05 19.05"
+                        width="72"
+                      >
+                        <g
+                          transform="translate(0 -277.95)"
+                        >
+                          <circle
+                            cx="9.525"
+                            cy="287.475"
+                            fill="lightblue"
+                            r="9.525"
+                            stroke-width="0.193"
+                          />
+                        </g>
+                      </svg>
+                    </div>
+                    <div
+                      class="MuiGrid-root TimelineEvent-barSimple-29"
+                    />
+                  </div>
+                </div>
+                <div
+                  class="MuiGrid-root"
+                >
+                  <div
+                    class="MuiGrid-root TimelineEvent-container-21"
+                  >
+                    <div
+                      class="MuiGrid-root TimelineEvent-circleContainer-25"
+                    >
+                      <svg
+                        class="TimelineEvent-icon-22 TimelineEvent-iconSimple-23"
+                        fill="currentColor"
+                        height="1em"
+                        stroke="currentColor"
+                        stroke-width="0"
+                        viewBox="0 0 16 16"
+                        width="1em"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          clip-rule="evenodd"
+                          d="M2 6.77l12.33-3.43.67.53v8.6l-.67.53-6.089-1.595a2.16 2.16 0 1 1-4.178-1.095L2 9.77l-.42-.53V7.3L2 6.77zm3.006 3.787a1.13 1.13 0 0 0-.04.242 1.17 1.17 0 0 0 2.288.347l-2.248-.589zM2.58 8.82L14 11.83V4.5L2.58 7.72v1.1z"
+                          fill-rule="evenodd"
+                        />
+                      </svg>
+                      <svg
+                        height="72"
+                        viewBox="0 0 19.05 19.05"
+                        width="72"
+                      >
+                        <g
+                          transform="translate(0 -277.95)"
+                        >
+                          <circle
+                            cx="9.525"
+                            cy="287.475"
+                            fill="lightgreen"
+                            r="9.525"
+                            stroke-width="0.193"
+                          />
+                        </g>
+                      </svg>
+                    </div>
+                    <div
+                      class="MuiGrid-root TimelineEvent-barSimple-29"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                class="ps__rail-x"
+                style="left: 0px; top: 0px;"
+              >
+                <div
+                  class="ps__thumb-x"
+                  style="left: 0px; width: 0px;"
+                  tabindex="0"
+                />
+              </div>
+              <div
+                class="ps__rail-y"
+                style="top: 0px; left: 0px;"
+              >
+                <div
+                  class="ps__thumb-y"
+                  style="top: 0px; height: 0px;"
+                  tabindex="0"
+                />
+              </div>
+            </div>
+          </div>
+          <p
+            class="card-text"
+          >
+            This is a shortened timeline to show the 10 most important actions taken on this bill.
+            <br />
+            To see the full list of bill actions, check below. 
+          </p>
+        </div>
+      </div>
+      <div
+        aria-hidden="true"
+        class="fade tab-pane"
+        role="tabpanel"
+      >
+        <img
+          src="flourish.gif"
+          style="width: 10%; height: 10%;"
+        />
+        <div
+          class="card-body"
+        >
+          <div
+            class="card-title h5"
+          >
+            As of Feb 26, 2019 , this bill is in the Senate.
+          </div>
+          <p
+            class="card-text"
+          >
+            The last action was: 
+            <b>
+              Received in the Senate and Read twice and referred to the Committee on Health, Education, Labor, and Pensions.
+            </b>
+          </p>
+        </div>
+      </div>
+      <div
+        aria-hidden="true"
+        class="fade tab-pane"
+        role="tabpanel"
+      >
+        <img
+          src="flourish.gif"
+          style="width: 10%; height: 10%;"
+        />
+        <div
+          class="card-body"
+        >
+          <div
+            class="container"
+          >
+            <div
+              class="row"
+            >
+              <div
+                class="col"
+              >
+                <div
+                  class="spinner-border"
+                  role="status"
+                >
+                  <span
+                    class="sr-only"
+                  >
+                    Loading...
+                  </span>
+                </div>
+              </div>
+              <div
+                class="col"
+              >
+                <h3>
+                  Co-Sponsors
+                </h3>
+                <div
+                  class="spinner-border"
+                  role="status"
+                >
+                  <span
+                    class="sr-only"
+                  >
+                    Loading...
+                  </span>
+                </div>
+                <div
+                  class="collapse"
+                />
+                <div
+                  class="list-group-item"
+                >
+                  <a>
+                    Click to Expand
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        aria-hidden="true"
+        class="fade tab-pane"
+        role="tabpanel"
+      >
+        <img
+          src="flourish.gif"
+          style="width: 10%; height: 10%;"
+        />
+        <div
+          class="card-body"
+        >
+          <div
+            class="row"
+          >
+            <div
+              class="col"
+            >
+              <a
+                href="https://www.congress.gov/bill/116th-congress/house-bill/501/text"
+              >
+                <img
+                  class=""
+                  id="logo"
+                  src="congressLogo.png"
+                />
+                <p>
+                  Full Bill Text from Congess.gov
+                </p>
+              </a>
+            </div>
+            <div
+              class="col"
+            >
+              <a
+                href="https://www.govtrack.us/congress/bills/116/hr501"
+              >
+                <img
+                  class=""
+                  id="logo"
+                  src="govtrackLogo.png"
+                />
+                <p>
+                  Supplementary Data from Govtrack.com
+                </p>
+              </a>
+            </div>
+            <div
+              class="col"
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        aria-hidden="false"
+        class="fade tab-pane active show"
+        role="tabpanel"
+      >
+        <img
+          src="flourish.gif"
+          style="width: 10%; height: 10%;"
+        />
+        <div
+          class="card-body"
+        >
+          <p>
+            Poison Center Network Enhancement Act of 2019 This bill reauthorizes for FY2020-FY2024 and revises the national toll-free phone number, public awareness campaign, and grant program relating to poison control centers.  Among other changes, the bill  supports enhancements of the national toll-free phone number, such as texting capabilities; expands the public awareness campaign to include education about drug misuse; and authorizes poison control centers and professional organizations to use grant funds for preventing and treating the misuse of opioids and other drugs. 
+          </p>
+          <p>
+            Full Bill Text Available 
+            <a
+              href="https://www.congress.gov/bill/116th-congress/house-bill/501/text"
+            >
+              here.
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

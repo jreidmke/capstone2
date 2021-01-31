@@ -17,7 +17,7 @@ const BillCard = ({bill}) => {
 
             <Tabs defaultActiveKey='text'>
             <hr/>
-
+        
                 <Tab eventKey='billTimeline' title='Bill Timeline'>
                 <img src={flourish} style={{width:"10%", height:"10%"}}/>
                     <BillTimeline2 bills={slimItDown(bill.actions)}/>
