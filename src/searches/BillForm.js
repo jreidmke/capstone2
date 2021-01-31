@@ -47,7 +47,7 @@ const BillForm = ({isNavbar}) => {
             className={isNavbar ? "isNavbar" : "isNotNavbar"}
             />
             <Button onClick={handleSubmit} variant='info' className={isNavbar ? 'ml-2 mb-1': 'mb-3 ml-2'}>{isNavbar ? "Go" : "Submit"}</Button>
-            <br/>{error.length ? <Alert variant='danger'>{error}</Alert> : ''}
+            <br/>{error.length ? <Alert variant='danger' id='alert'>{error}</Alert> : ''}
     
         </form>
     )

@@ -10,3 +10,8 @@
     width: 15em;
     margin-left: 3em;
 }
+
+#alert {
+    position: absolute;
+    margin-left: 4em;
+}
