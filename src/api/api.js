@@ -49,7 +49,6 @@ class PropublicaApi {
     /**Returns All Politicians representing specified OCD string */
     static async getPoliticiansByOcd(ocdDiv) {
         let sens, rep;
-
         //some states with smaller Pop. only have one rep for the entire state
         let oneRepStates = ['ak', 'de', 'mt', 'nd', 'sd', 'vt', 'wy'];
         const ocdDivObj = getStateAndCd(ocdDiv);

@@ -13,6 +13,7 @@ import {wheresMyRep} from './../modalMessages';
 
 const LocalPoliticians = () => {
     const {ocdDivId} = useParams();
+    console.log(ocdDivId)
     const [senators, setSentators] = useState();
     const [represetative, setRepresentative] = useState();
     const locale = getStateAndCd(ocdDivId);
