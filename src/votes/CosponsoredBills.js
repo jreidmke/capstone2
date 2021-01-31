@@ -2,7 +2,7 @@ import Table from 'react-bootstrap/Table';
 import {dateTimeFormatter} from '../helpers/helpers';
 import { Link } from 'react-router-dom'; 
 import {FaCheck, FaTimes} from 'react-icons/fa';
-import './../bills/BillSearchResults.css';
+import './../searches/BillSearchResults.css';
 
 const CosponsoredBills = ({bills}) => {
 

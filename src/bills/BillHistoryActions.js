@@ -1,7 +1,7 @@
 import Table from 'react-bootstrap/Table';
 
 
-const BillHistoryActions = ({votes}) => {
+const BillHistoryActions = ({actions}) => {
 
     return(
         
@@ -16,12 +16,12 @@ const BillHistoryActions = ({votes}) => {
             </thead>
             
                 <tbody>
-                    {votes.map(v => (
+                    {actions.map(a => (
                         <tr>
-                            <td>{v.datetime}</td>
-                            <td>{v.chamber}</td>
-                            <td>{v.action_type}</td>
-                            <td>{v.description}</td>
+                            <td>{a.datetime}</td>
+                            <td>{a.chamber}</td>
+                            <td>{a.action_type}</td>
+                            <td>{a.description}</td>
                         </tr>
                     ))}
                 </tbody>

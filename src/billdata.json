@@ -1,154 +1,1823 @@
 
-{
-        "bill_id": "hr501-116",
-        "bill_slug": "hr501",
-        "congress": "116",
-        "bill": "H.R.501",
-        "bill_type": "hr",
-        "number": "H.R.501",
-        "bill_uri": "https://api.propublica.org/congress/v1/116/bills/hr501.json",
-        "title": "To amend the Public Health Service Act to reauthorize and enhance the poison center national toll-free number, national media campaign, and grant program, and for other purposes.",
-        "short_title": "Poison Center Network Enhancement Act of 2019",
-        "sponsor_title": "Rep.",
-        "sponsor": "Eliot L. Engel",
-        "sponsor_id": "E000179",
-        "sponsor_uri": "https://api.propublica.org/congress/v1/members/E000179.json",
-        "sponsor_party": "D",
-        "sponsor_state": "NY",
-        "gpo_pdf_uri": null,
-        "congressdotgov_url": "https://www.congress.gov/bill/116th-congress/house-bill/501",
-        "govtrack_url": "https://www.govtrack.us/congress/bills/116/hr501",
-        "introduced_date": "2019-01-11",
-        "active": true,
-        "last_vote": null,
-        "house_passage": "2019-02-25",
-        "senate_passage": null,
-        "enacted": null,
-        "vetoed": null,
-        "cosponsors": 4,
-        "cosponsors_by_party": {
-          "R": 3,
-          "D": 1
+    {
+      "bill_id": "hr6395-116",
+      "bill_slug": "hr6395",
+      "congress": "116",
+      "bill": "H.R.6395",
+      "bill_type": "hr",
+      "number": "H.R.6395",
+      "bill_uri": "https://api.propublica.org/congress/v1/116/bills/hr6395.json",
+      "title": "To authorize appropriations for fiscal year 2021 for military activities of the Department of Defense and for military construction, to prescribe military personnel strengths for such fiscal year, and for other purposes.",
+      "short_title": "National Defense Authorization Act for Fiscal Year 2021",
+      "sponsor_title": "Rep.",
+      "sponsor": "Adam Smith",
+      "sponsor_id": "S000510",
+      "sponsor_uri": "https://api.propublica.org/congress/v1/members/S000510.json",
+      "sponsor_party": "D",
+      "sponsor_state": "WA",
+      "gpo_pdf_uri": null,
+      "congressdotgov_url": "https://www.congress.gov/bill/116th-congress/house-bill/6395",
+      "govtrack_url": "https://www.govtrack.us/congress/bills/116/hr6395",
+      "introduced_date": "2020-03-26",
+      "active": true,
+      "last_vote": "2021-01-01",
+      "house_passage": "2020-11-18",
+      "senate_passage": "2020-11-16",
+      "enacted": null,
+      "vetoed": "2020-12-23",
+      "cosponsors": 1,
+      "cosponsors_by_party": {
+        "R": 1
+      },
+      "withdrawn_cosponsors": 0,
+      "primary_subject": "Armed Forces and National Security",
+      "committees": "House Armed Services Committee",
+      "committee_codes": [
+        "HSWM",
+        "HSVR",
+        "HSPW",
+        "HSSM",
+        "HSSY",
+        "HSGO",
+        "HSII",
+        "HSJU",
+        "HSHA",
+        "HSHM",
+        "HSFA",
+        "HSBA",
+        "HSIF",
+        "HSED",
+        "HSBU",
+        "HSAG",
+        "HSAS"
+      ],
+      "subcommittee_codes": [
+        "HSAS03",
+        "HSAS28",
+        "HSAS29",
+        "HSAS25",
+        "HSAS02",
+        "HSAS26"
+      ],
+      "latest_major_action_date": "2020-12-30",
+      "latest_major_action": "Cloture motion on the veto message presented in Senate.",
+      "house_passage_vote": "2020-11-18",
+      "senate_passage_vote": "2020-11-16",
+      "summary": "William M. (Mac) Thornberry National Defense Authorization Act for Fiscal Year 2021 This bill authorizes FY2021 appropriations and sets forth policies for Department of Defense (DOD) programs and activities, including military personnel strengths. It does not provide budget authority, which is provided in subsequent appropriations legislation. The bill authorizes appropriations to DOD for  Procurement, including aircraft, weapons and tracked combat vehicles, shipbuilding and conversion, and missiles; Research, Development, Test, and Evaluation; Operation and Maintenance; Working Capital Funds; Chemical Agents and Munitions Destruction; Drug Interdiction and Counter-Drug Activities; the Defense Inspector General; the National Defense Sealift Fund; the Defense Health Program; the Armed Forces Retirement Home; the Space Force; Overseas Contingency Operations; and Military Construction.  The bill also authorizes the FY2021 personnel strengths for active duty and reserve forces and sets forth policies regarding  military personnel; acquisition policy and management; international programs; National Guard and Reserve Force facilities; compensation and other personnel benefits; health care; matters relating to COVID-19 (i.e., coronavirus disease 2019); DOD organization and management; civilian personnel matters; matters relating to foreign nations; and strategic programs, cyber, and intelligence matters.  The bill authorizes appropriations for base realignment and closure activities, and maritime matters. The bill authorizes appropriations and sets forth policies for Department of Energy national security programs, including the National Nuclear Security Administration and the Defense Nuclear Facilities Safety Board. The bill also sets forth policies regarding certain federal activities related to artificial intelligence, including implementation by the President of a National Artificial Intelligence Initiative to support research and development, education, and training programs. ",
+      "summary_short": "William M. (Mac) Thornberry National Defense Authorization Act for Fiscal Year 2021 This bill authorizes FY2021 appropriations and sets forth policies for Department of Defense (DOD) programs and activities, including military personnel strengths. It does not provide budget authority, which is provided in subsequent appropriations legislation. The bill authorizes appropriations to DOD for  Procurement, including aircraft, weapons and tracked combat vehicles, shipbuilding and conversion, and m...",
+      "cbo_estimate_url": null,
+      "versions": [
+        {
+          "status": "Engrossed Amendment Senate",
+          "title": "EAS",
+          "url": "https://www.govinfo.gov/content/pkg/BILLS-116hr6395eas/xml/BILLS-116hr6395eas.xml",
+          "congressdotgov_url": "https://www.congress.gov/bill/116th-congress/house-bill/6395/text/eas"
         },
-        "withdrawn_cosponsors": 0,
-        "primary_subject": "Health",
-        "committees": "Senate Health, Education, Labor, and Pensions Committee",
-        "committee_codes": [
-          "SSHR",
-          "HSIF"
-        ],
-        "subcommittee_codes": [
-          "HSIF14"
-        ],
-        "latest_major_action_date": "2019-02-26",
-        "latest_major_action": "Received in the Senate and Read twice and referred to the Committee on Health, Education, Labor, and Pensions.",
-        "house_passage_vote": "2019-02-25",
-        "senate_passage_vote": null,
-        "summary": "Poison Center Network Enhancement Act of 2019 This bill reauthorizes for FY2020-FY2024 and revises the national toll-free phone number, public awareness campaign, and grant program relating to poison control centers.  Among other changes, the bill  supports enhancements of the national toll-free phone number, such as texting capabilities; expands the public awareness campaign to include education about drug misuse; and authorizes poison control centers and professional organizations to use grant funds for preventing and treating the misuse of opioids and other drugs. ",
-        "summary_short": "Poison Center Network Enhancement Act of 2019 This bill reauthorizes for FY2020-FY2024 and revises the national toll-free phone number, public awareness campaign, and grant program relating to poison control centers.  Among other changes, the bill  supports enhancements of the national toll-free phone number, such as texting capabilities; expands the public awareness campaign to include education about drug misuse; and authorizes poison control centers and professional organizations to use gr...",
-        "cbo_estimate_url": null,
-        "versions": [
-          {
-            "status": "Referred in Senate",
-            "title": "RFS",
-            "url": "https://www.govinfo.gov/content/pkg/BILLS-116hr501rfs/xml/BILLS-116hr501rfs.xml",
-            "congressdotgov_url": "https://www.congress.gov/bill/116th-congress/house-bill/501/text/rfs"
-          },
-          {
-            "status": "Engrossed in House",
-            "title": "EH",
-            "url": "https://www.govinfo.gov/content/pkg/BILLS-116hr501eh/xml/BILLS-116hr501eh.xml",
-            "congressdotgov_url": "https://www.congress.gov/bill/116th-congress/house-bill/501/text/eh"
-          },
-          {
-            "status": "Introduced in House",
-            "title": "IH",
-            "url": "https://www.govinfo.gov/content/pkg/BILLS-116hr501ih/xml/BILLS-116hr501ih.xml",
-            "congressdotgov_url": "https://www.congress.gov/bill/116th-congress/house-bill/501/text/ih"
-          }
-        ],
-        "actions": [
-          {
-            "id": 11,
-            "chamber": "Senate",
-            "action_type": "IntroReferral",
-            "datetime": "2019-02-26",
-            "description": "Received in the Senate and Read twice and referred to the Committee on Health, Education, Labor, and Pensions."
-          },
-          {
-            "id": 10,
-            "chamber": "House",
-            "action_type": "Floor",
-            "datetime": "2019-02-25",
-            "description": "Motion to reconsider laid on the table Agreed to without objection."
-          },
-          {
-            "id": 9,
-            "chamber": "House",
-            "action_type": "Floor",
-            "datetime": "2019-02-25",
-            "description": "On motion to suspend the rules and pass the bill Agreed to by voice vote."
-          },
-          {
-            "id": 8,
-            "chamber": "House",
-            "action_type": "Floor",
-            "datetime": "2019-02-25",
-            "description": "DEBATE - The House proceeded with forty minutes of debate on H.R. 501."
-          },
-          {
-            "id": 7,
-            "chamber": "House",
-            "action_type": "Floor",
-            "datetime": "2019-02-25",
-            "description": "Considered under suspension of the rules."
-          },
-          {
-            "id": 6,
-            "chamber": "House",
-            "action_type": "Floor",
-            "datetime": "2019-02-25",
-            "description": "Mr. Engel moved to suspend the rules and pass the bill."
-          },
-          {
-            "id": 5,
-            "chamber": "House",
-            "action_type": "Floor",
-            "datetime": "2019-02-25",
-            "description": "On motion to suspend the rules and pass the bill Agreed to by voice vote. (text: CR H2052-2053)"
-          },
-          {
-            "id": 4,
-            "chamber": "House",
-            "action_type": "Floor",
-            "datetime": "2019-02-25",
-            "description": "Considered under suspension of the rules. (consideration: CR H2052-2053)"
-          },
-          {
-            "id": 3,
-            "chamber": "House",
-            "action_type": "Committee",
-            "datetime": "2019-01-31",
-            "description": "Referred to the Subcommittee on Health."
-          },
-          {
-            "id": 2,
-            "chamber": "House",
-            "action_type": "Committee",
-            "datetime": "2019-01-25",
-            "description": "Referred to the Subcommittee on Health."
-          },
-          {
-            "id": 1,
-            "chamber": "House",
-            "action_type": "IntroReferral",
-            "datetime": "2019-01-11",
-            "description": "Referred to the House Committee on Energy and Commerce."
-          }
-        ],
-        "presidential_statements": [
-        ],
-        "votes": [
-        ]
+        {
+          "status": "Reported in House",
+          "title": "RH",
+          "url": "https://www.govinfo.gov/content/pkg/BILLS-116hr6395rh/xml/BILLS-116hr6395rh.xml",
+          "congressdotgov_url": "https://www.congress.gov/bill/116th-congress/house-bill/6395/text/rh"
+        },
+        {
+          "status": "Reported in House",
+          "title": "RH",
+          "url": "",
+          "congressdotgov_url": "https://www.congress.gov/bill/116th-congress/house-bill/6395/text/rh"
+        },
+        {
+          "status": "Reported in House",
+          "title": "RH",
+          "url": "",
+          "congressdotgov_url": "https://www.congress.gov/bill/116th-congress/house-bill/6395/text/rh"
+        },
+        {
+          "status": "Reported in House",
+          "title": "RH",
+          "url": "",
+          "congressdotgov_url": "https://www.congress.gov/bill/116th-congress/house-bill/6395/text/rh"
+        },
+        {
+          "status": "Reported in House",
+          "title": "RH",
+          "url": "",
+          "congressdotgov_url": "https://www.congress.gov/bill/116th-congress/house-bill/6395/text/rh"
+        },
+        {
+          "status": "Reported in House",
+          "title": "RH",
+          "url": "",
+          "congressdotgov_url": "https://www.congress.gov/bill/116th-congress/house-bill/6395/text/rh"
+        },
+        {
+          "status": "Reported in House",
+          "title": "RH",
+          "url": "",
+          "congressdotgov_url": "https://www.congress.gov/bill/116th-congress/house-bill/6395/text/rh"
+        },
+        {
+          "status": "Reported in House",
+          "title": "RH",
+          "url": "",
+          "congressdotgov_url": "https://www.congress.gov/bill/116th-congress/house-bill/6395/text/rh"
+        },
+        {
+          "status": "Reported in House",
+          "title": "RH",
+          "url": "",
+          "congressdotgov_url": "https://www.congress.gov/bill/116th-congress/house-bill/6395/text/rh"
+        },
+        {
+          "status": "Reported in House",
+          "title": "RH",
+          "url": "",
+          "congressdotgov_url": "https://www.congress.gov/bill/116th-congress/house-bill/6395/text/rh"
+        },
+        {
+          "status": "Reported in House",
+          "title": "RH",
+          "url": "",
+          "congressdotgov_url": "https://www.congress.gov/bill/116th-congress/house-bill/6395/text/rh"
+        },
+        {
+          "status": "Reported in House",
+          "title": "RH",
+          "url": "",
+          "congressdotgov_url": "https://www.congress.gov/bill/116th-congress/house-bill/6395/text/rh"
+        },
+        {
+          "status": "Reported in House",
+          "title": "RH",
+          "url": "",
+          "congressdotgov_url": "https://www.congress.gov/bill/116th-congress/house-bill/6395/text/rh"
+        },
+        {
+          "status": "Reported in House",
+          "title": "RH",
+          "url": "",
+          "congressdotgov_url": "https://www.congress.gov/bill/116th-congress/house-bill/6395/text/rh"
+        },
+        {
+          "status": "Reported in House",
+          "title": "RH",
+          "url": "",
+          "congressdotgov_url": "https://www.congress.gov/bill/116th-congress/house-bill/6395/text/rh"
+        },
+        {
+          "status": "Reported in House",
+          "title": "RH",
+          "url": "",
+          "congressdotgov_url": "https://www.congress.gov/bill/116th-congress/house-bill/6395/text/rh"
+        },
+        {
+          "status": "Reported in House",
+          "title": "RH",
+          "url": "",
+          "congressdotgov_url": "https://www.congress.gov/bill/116th-congress/house-bill/6395/text/rh"
+        },
+        {
+          "status": "Reported in House",
+          "title": "RH",
+          "url": "",
+          "congressdotgov_url": "https://www.congress.gov/bill/116th-congress/house-bill/6395/text/rh"
+        },
+        {
+          "status": "Reported in House",
+          "title": "RH",
+          "url": "",
+          "congressdotgov_url": "https://www.congress.gov/bill/116th-congress/house-bill/6395/text/rh"
+        },
+        {
+          "status": "Placed on Calendar Senate",
+          "title": "PCS",
+          "url": "https://www.govinfo.gov/content/pkg/BILLS-116hr6395pcs/xml/BILLS-116hr6395pcs.xml",
+          "congressdotgov_url": "https://www.congress.gov/bill/116th-congress/house-bill/6395/text/pcs"
+        },
+        {
+          "status": "Reported in House",
+          "title": "RH",
+          "url": "",
+          "congressdotgov_url": "https://www.congress.gov/bill/116th-congress/house-bill/6395/text/rh"
+        },
+        {
+          "status": "Reported in House",
+          "title": "RH",
+          "url": "",
+          "congressdotgov_url": "https://www.congress.gov/bill/116th-congress/house-bill/6395/text/rh"
+        },
+        {
+          "status": "Engrossed in House",
+          "title": "EH",
+          "url": "https://www.govinfo.gov/content/pkg/BILLS-116hr6395eh/xml/BILLS-116hr6395eh.xml",
+          "congressdotgov_url": "https://www.congress.gov/bill/116th-congress/house-bill/6395/text/eh"
+        },
+        {
+          "status": "Reported in House",
+          "title": "RH",
+          "url": "",
+          "congressdotgov_url": "https://www.congress.gov/bill/116th-congress/house-bill/6395/text/rh"
+        },
+        {
+          "status": "Reported in House",
+          "title": "RH",
+          "url": "",
+          "congressdotgov_url": "https://www.congress.gov/bill/116th-congress/house-bill/6395/text/rh"
+        },
+        {
+          "status": "Reported in House",
+          "title": "RH",
+          "url": "",
+          "congressdotgov_url": "https://www.congress.gov/bill/116th-congress/house-bill/6395/text/rh"
+        },
+        {
+          "status": "Reported in House",
+          "title": "RH",
+          "url": "",
+          "congressdotgov_url": "https://www.congress.gov/bill/116th-congress/house-bill/6395/text/rh"
+        },
+        {
+          "status": "Reported in House",
+          "title": "RH",
+          "url": "",
+          "congressdotgov_url": "https://www.congress.gov/bill/116th-congress/house-bill/6395/text/rh"
+        },
+        {
+          "status": "Reported in House",
+          "title": "RH",
+          "url": "",
+          "congressdotgov_url": "https://www.congress.gov/bill/116th-congress/house-bill/6395/text/rh"
+        },
+        {
+          "status": "Reported in House",
+          "title": "RH",
+          "url": "",
+          "congressdotgov_url": "https://www.congress.gov/bill/116th-congress/house-bill/6395/text/rh"
+        },
+        {
+          "status": "Reported in House",
+          "title": "RH",
+          "url": "",
+          "congressdotgov_url": "https://www.congress.gov/bill/116th-congress/house-bill/6395/text/rh"
+        },
+        {
+          "status": "Reported in House",
+          "title": "RH",
+          "url": "",
+          "congressdotgov_url": "https://www.congress.gov/bill/116th-congress/house-bill/6395/text/rh"
+        },
+        {
+          "status": "Reported in House",
+          "title": "RH",
+          "url": "",
+          "congressdotgov_url": "https://www.congress.gov/bill/116th-congress/house-bill/6395/text/rh"
+        },
+        {
+          "status": "Reported in House",
+          "title": "RH",
+          "url": "",
+          "congressdotgov_url": "https://www.congress.gov/bill/116th-congress/house-bill/6395/text/rh"
+        },
+        {
+          "status": "Reported in House",
+          "title": "RH",
+          "url": "",
+          "congressdotgov_url": "https://www.congress.gov/bill/116th-congress/house-bill/6395/text/rh"
+        },
+        {
+          "status": "Reported in House",
+          "title": "RH",
+          "url": "",
+          "congressdotgov_url": "https://www.congress.gov/bill/116th-congress/house-bill/6395/text/rh"
+        },
+        {
+          "status": "Reported in House",
+          "title": "RH",
+          "url": "",
+          "congressdotgov_url": "https://www.congress.gov/bill/116th-congress/house-bill/6395/text/rh"
+        },
+        {
+          "status": "Reported in House",
+          "title": "RH",
+          "url": "",
+          "congressdotgov_url": "https://www.congress.gov/bill/116th-congress/house-bill/6395/text/rh"
+        },
+        {
+          "status": "Reported in House",
+          "title": "RH",
+          "url": "",
+          "congressdotgov_url": "https://www.congress.gov/bill/116th-congress/house-bill/6395/text/rh"
+        },
+        {
+          "status": "Reported in House",
+          "title": "RH",
+          "url": "",
+          "congressdotgov_url": "https://www.congress.gov/bill/116th-congress/house-bill/6395/text/rh"
+        },
+        {
+          "status": "Reported in House",
+          "title": "RH",
+          "url": "",
+          "congressdotgov_url": "https://www.congress.gov/bill/116th-congress/house-bill/6395/text/rh"
+        },
+        {
+          "status": "Reported in House",
+          "title": "RH",
+          "url": "",
+          "congressdotgov_url": "https://www.congress.gov/bill/116th-congress/house-bill/6395/text/rh"
+        },
+        {
+          "status": "Reported in House",
+          "title": "RH",
+          "url": "",
+          "congressdotgov_url": "https://www.congress.gov/bill/116th-congress/house-bill/6395/text/rh"
+        },
+        {
+          "status": "Reported in House",
+          "title": "RH",
+          "url": "",
+          "congressdotgov_url": "https://www.congress.gov/bill/116th-congress/house-bill/6395/text/rh"
+        },
+        {
+          "status": "Reported in House",
+          "title": "RH",
+          "url": "",
+          "congressdotgov_url": "https://www.congress.gov/bill/116th-congress/house-bill/6395/text/rh"
+        },
+        {
+          "status": "Reported in House",
+          "title": "RH",
+          "url": "",
+          "congressdotgov_url": "https://www.congress.gov/bill/116th-congress/house-bill/6395/text/rh"
+        },
+        {
+          "status": "Reported in House",
+          "title": "RH",
+          "url": "",
+          "congressdotgov_url": "https://www.congress.gov/bill/116th-congress/house-bill/6395/text/rh"
+        },
+        {
+          "status": "Reported in House",
+          "title": "RH",
+          "url": "",
+          "congressdotgov_url": "https://www.congress.gov/bill/116th-congress/house-bill/6395/text/rh"
+        },
+        {
+          "status": "Reported in House",
+          "title": "RH",
+          "url": "",
+          "congressdotgov_url": "https://www.congress.gov/bill/116th-congress/house-bill/6395/text/rh"
+        },
+        {
+          "status": "Reported in House",
+          "title": "RH",
+          "url": "",
+          "congressdotgov_url": "https://www.congress.gov/bill/116th-congress/house-bill/6395/text/rh"
+        },
+        {
+          "status": "Reported in House",
+          "title": "RH",
+          "url": "",
+          "congressdotgov_url": "https://www.congress.gov/bill/116th-congress/house-bill/6395/text/rh"
+        },
+        {
+          "status": "Reported in House",
+          "title": "RH",
+          "url": "",
+          "congressdotgov_url": "https://www.congress.gov/bill/116th-congress/house-bill/6395/text/rh"
+        },
+        {
+          "status": "Reported in House",
+          "title": "RH",
+          "url": "",
+          "congressdotgov_url": "https://www.congress.gov/bill/116th-congress/house-bill/6395/text/rh"
+        },
+        {
+          "status": "Reported in House",
+          "title": "RH",
+          "url": "",
+          "congressdotgov_url": "https://www.congress.gov/bill/116th-congress/house-bill/6395/text/rh"
+        },
+        {
+          "status": "Reported in House",
+          "title": "RH",
+          "url": "",
+          "congressdotgov_url": "https://www.congress.gov/bill/116th-congress/house-bill/6395/text/rh"
+        },
+        {
+          "status": "Reported in House",
+          "title": "RH",
+          "url": "",
+          "congressdotgov_url": "https://www.congress.gov/bill/116th-congress/house-bill/6395/text/rh"
+        },
+        {
+          "status": "Reported in House",
+          "title": "RH",
+          "url": "",
+          "congressdotgov_url": "https://www.congress.gov/bill/116th-congress/house-bill/6395/text/rh"
+        },
+        {
+          "status": "Reported in House",
+          "title": "RH",
+          "url": "",
+          "congressdotgov_url": "https://www.congress.gov/bill/116th-congress/house-bill/6395/text/rh"
+        },
+        {
+          "status": "Reported in House",
+          "title": "RH",
+          "url": "",
+          "congressdotgov_url": "https://www.congress.gov/bill/116th-congress/house-bill/6395/text/rh"
+        },
+        {
+          "status": "Reported in House",
+          "title": "RH",
+          "url": "",
+          "congressdotgov_url": "https://www.congress.gov/bill/116th-congress/house-bill/6395/text/rh"
+        },
+        {
+          "status": "Reported in House",
+          "title": "RH",
+          "url": "",
+          "congressdotgov_url": "https://www.congress.gov/bill/116th-congress/house-bill/6395/text/rh"
+        },
+        {
+          "status": "Reported in House",
+          "title": "RH",
+          "url": "",
+          "congressdotgov_url": "https://www.congress.gov/bill/116th-congress/house-bill/6395/text/rh"
+        },
+        {
+          "status": "Reported in House",
+          "title": "RH",
+          "url": "",
+          "congressdotgov_url": "https://www.congress.gov/bill/116th-congress/house-bill/6395/text/rh"
+        },
+        {
+          "status": "Reported in House",
+          "title": "RH",
+          "url": "",
+          "congressdotgov_url": "https://www.congress.gov/bill/116th-congress/house-bill/6395/text/rh"
+        },
+        {
+          "status": "Reported in House",
+          "title": "RH",
+          "url": "",
+          "congressdotgov_url": "https://www.congress.gov/bill/116th-congress/house-bill/6395/text/rh"
+        },
+        {
+          "status": "Reported in House",
+          "title": "RH",
+          "url": "",
+          "congressdotgov_url": "https://www.congress.gov/bill/116th-congress/house-bill/6395/text/rh"
+        },
+        {
+          "status": "Reported in House",
+          "title": "RH",
+          "url": "",
+          "congressdotgov_url": "https://www.congress.gov/bill/116th-congress/house-bill/6395/text/rh"
+        },
+        {
+          "status": "Introduced in House",
+          "title": "IH",
+          "url": "https://www.govinfo.gov/content/pkg/BILLS-116hr6395ih/xml/BILLS-116hr6395ih.xml",
+          "congressdotgov_url": "https://www.congress.gov/bill/116th-congress/house-bill/6395/text/ih"
+        }
+      ],
+      "actions": [
+        {
+          "id": 154,
+          "chamber": "Senate",
+          "action_type": "Floor",
+          "datetime": "2020-12-30",
+          "description": "Cloture motion on the veto message presented in Senate."
+        },
+        {
+          "id": 153,
+          "chamber": "Senate",
+          "action_type": "Veto",
+          "datetime": "2020-12-30",
+          "description": "Veto Message considered in Senate."
+        },
+        {
+          "id": 152,
+          "chamber": "Senate",
+          "action_type": "Floor",
+          "datetime": "2020-12-30",
+          "description": "Motion to proceed to consideration of the veto message on H.R. 6395 agreed to in Senate by Yea-Nay Vote. 80 - 12. Record Vote Number: 290."
+        },
+        {
+          "id": 151,
+          "chamber": "Senate",
+          "action_type": "Veto",
+          "datetime": "2020-12-30",
+          "description": "Veto Message considered in Senate. (consideration: CR S7982-7983)"
+        },
+        {
+          "id": 150,
+          "chamber": "Senate",
+          "action_type": "Veto",
+          "datetime": "2020-12-29",
+          "description": "Veto message received in Senate. Ordered held at the desk."
+        },
+        {
+          "id": 149,
+          "chamber": "House",
+          "action_type": "Floor",
+          "datetime": "2020-12-28",
+          "description": "The Chair directed the Clerk to notify the Senate of the action of the House."
+        },
+        {
+          "id": 148,
+          "chamber": "House",
+          "action_type": "Veto",
+          "datetime": "2020-12-28",
+          "description": "Two-thirds of the Members present having voted in the affirmative the bill is passed, the objections of the President to the contrary notwithstanding. Passed by the Yeas and Nays: (2/3 required): 322 - 87 (Roll no. 253)."
+        },
+        {
+          "id": 147,
+          "chamber": "House",
+          "action_type": "Floor",
+          "datetime": "2020-12-28",
+          "description": "UNFINISHED BUSINESS - The Chair announced the unfinished business was on passage of H.R. 6395, the objections of the President to the contrary notwithstanding."
+        },
+        {
+          "id": 146,
+          "chamber": "House",
+          "action_type": "Floor",
+          "datetime": "2020-12-28",
+          "description": "POSTPONED PROCEEDINGS - Pursuant to clause 8, Rule XX, the Chair postponed further proceedings on the question on passage of H.R. 6395, the objections of the President to the contrary notwithstanding, until later in the legislative day."
+        },
+        {
+          "id": 145,
+          "chamber": "House",
+          "action_type": "Floor",
+          "datetime": "2020-12-28",
+          "description": "The previous question was ordered without objection."
+        },
+        {
+          "id": 144,
+          "chamber": "House",
+          "action_type": "Floor",
+          "datetime": "2020-12-28",
+          "description": "DEBATE - The House proceeded with one hour of debate on the question on passage of H.R. 6395, the objections of the President to the contrary, notwithstanding."
+        },
+        {
+          "id": 143,
+          "chamber": "House",
+          "action_type": "Floor",
+          "datetime": "2020-12-28",
+          "description": "Pursuant to section 4 of H. Res. 1271, the Chair announced that the unfinished business was the further consideration of the veto message of the President on H.R. 6395."
+        },
+        {
+          "id": 142,
+          "chamber": "House",
+          "action_type": "Veto",
+          "datetime": "2020-12-28",
+          "description": "The Chair laid before the House the veto message from the President."
+        },
+        {
+          "id": 141,
+          "chamber": "House",
+          "action_type": "Floor",
+          "datetime": "2020-12-28",
+          "description": "UNFINISHED BUSINESS - The Chair announced the unfinished business was on passage of H.R. 6395, the objections of the President to the contrary notwithstanding. (consideration: CR H9163-9164)"
+        },
+        {
+          "id": 140,
+          "chamber": "House",
+          "action_type": "Veto",
+          "datetime": "2020-12-28",
+          "description": "The Chair laid before the House the veto message from the President. (consideration: CR H9160-9163)"
+        },
+        {
+          "id": 139,
+          "chamber": "House",
+          "action_type": "Floor",
+          "datetime": "2020-12-24",
+          "description": "Pursuant to section 4 of H. Res. 1271, further consideration of the veto message on H.R. 6395 will be postponed until Monday, December 28, 2020."
+        },
+        {
+          "id": 138,
+          "chamber": "House",
+          "action_type": "Floor",
+          "datetime": "2020-12-24",
+          "description": "The Chair announced that pursuant to section 4 of H. Res. 1271, further consideration of the veto message and the bill will be postponed until Monday, December 28, 2020."
+        },
+        {
+          "id": 137,
+          "chamber": "House",
+          "action_type": "Floor",
+          "datetime": "2020-12-24",
+          "description": "The Chair announced that the objections of the President to H.R. 6395 would be spread at large upon the Journal and the veto message would be printed as a House Document (116-174)."
+        },
+        {
+          "id": 136,
+          "chamber": "House",
+          "action_type": "Floor",
+          "datetime": "2020-12-24",
+          "description": "The Chair laid before the House the veto message from the President."
+        },
+        {
+          "id": 135,
+          "chamber": "House",
+          "action_type": "Floor",
+          "datetime": "2020-12-24",
+          "description": "The Chair laid before the House the veto message from the President. (consideration: CR H9150; text: CR H9150)"
+        },
+        {
+          "id": 134,
+          "chamber": null,
+          "action_type": "President",
+          "datetime": "2020-12-23",
+          "description": "Vetoed by President."
+        },
+        {
+          "id": 133,
+          "chamber": "House",
+          "action_type": "Floor",
+          "datetime": "2020-12-11",
+          "description": "Presented to President."
+        },
+        {
+          "id": 132,
+          "chamber": "Senate",
+          "action_type": "Floor",
+          "datetime": "2020-12-11",
+          "description": "Message on Senate action sent to the House."
+        },
+        {
+          "id": 131,
+          "chamber": "Senate",
+          "action_type": "ResolvingDifferences",
+          "datetime": "2020-12-11",
+          "description": "Senate agreed to conference report by Yea-Nay Vote. 84 - 13. Record Vote Number: 264."
+        },
+        {
+          "id": 130,
+          "chamber": "Senate",
+          "action_type": "Floor",
+          "datetime": "2020-12-11",
+          "description": "Cloture on the conference report to accompany H.R. 6395 invoked in Senate by Yea-Nay Vote. 84 - 13. Record Vote Number: 263."
+        },
+        {
+          "id": 129,
+          "chamber": "Senate",
+          "action_type": "ResolvingDifferences",
+          "datetime": "2020-12-11",
+          "description": "Conference report considered in Senate."
+        },
+        {
+          "id": 128,
+          "chamber": "Senate",
+          "action_type": "Floor",
+          "datetime": "2020-12-11",
+          "description": "Cloture on the conference report to accompany H.R. 6395 invoked in Senate by Yea-Nay Vote. 84 - 13. Record Vote Number: 263. (CR S7437)"
+        },
+        {
+          "id": 127,
+          "chamber": "Senate",
+          "action_type": "ResolvingDifferences",
+          "datetime": "2020-12-11",
+          "description": "Conference report considered in Senate. (consideration: CR S7437, S7442-7443)"
+        },
+        {
+          "id": 126,
+          "chamber": "Senate",
+          "action_type": "ResolvingDifferences",
+          "datetime": "2020-12-10",
+          "description": "Conference report considered in Senate."
+        },
+        {
+          "id": 125,
+          "chamber": "Senate",
+          "action_type": "ResolvingDifferences",
+          "datetime": "2020-12-10",
+          "description": "Conference report considered in Senate. (consideration: CR S7381-7393, S7395-7396, S7398-7416)"
+        },
+        {
+          "id": 124,
+          "chamber": "Senate",
+          "action_type": "ResolvingDifferences",
+          "datetime": "2020-12-10",
+          "description": "Conference report considered in Senate. (consideration: CR S7381-7393, 7395-7396, 7398-7416)"
+        },
+        {
+          "id": 123,
+          "chamber": "Senate",
+          "action_type": "Floor",
+          "datetime": "2020-12-09",
+          "description": "Cloture motion on the conference report to accompany H.R. 6395 presented in Senate."
+        },
+        {
+          "id": 122,
+          "chamber": "Senate",
+          "action_type": "ResolvingDifferences",
+          "datetime": "2020-12-09",
+          "description": "Conference report considered in Senate."
+        },
+        {
+          "id": 121,
+          "chamber": "Senate",
+          "action_type": "Floor",
+          "datetime": "2020-12-09",
+          "description": "Cloture motion on the conference report to accompany H.R. 6395 presented in Senate. (CR S7318)"
+        },
+        {
+          "id": 120,
+          "chamber": "Senate",
+          "action_type": "ResolvingDifferences",
+          "datetime": "2020-12-09",
+          "description": "Conference report considered in Senate. (consideration: CR S7317-7318)"
+        },
+        {
+          "id": 119,
+          "chamber": "Senate",
+          "action_type": "ResolvingDifferences",
+          "datetime": "2020-12-08",
+          "description": "Conference papers: message on House action held at the desk in Senate."
+        },
+        {
+          "id": 118,
+          "chamber": "House",
+          "action_type": "ResolvingDifferences",
+          "datetime": "2020-12-08",
+          "description": "Motions to reconsider laid on the table Agreed to without objection."
+        },
+        {
+          "id": 117,
+          "chamber": "House",
+          "action_type": "ResolvingDifferences",
+          "datetime": "2020-12-08",
+          "description": "On agreeing to the conference report Agreed to by the Yeas and Nays: 335 - 78, 1 Present (Roll no. 238)."
+        },
+        {
+          "id": 116,
+          "chamber": "House",
+          "action_type": "ResolvingDifferences",
+          "datetime": "2020-12-08",
+          "description": "The House proceeded to consider the conference report H.Rept. 116-617 as unfinished business. (consideration: CR H7021)"
+        },
+        {
+          "id": 115,
+          "chamber": "House",
+          "action_type": "ResolvingDifferences",
+          "datetime": "2020-12-08",
+          "description": "The House proceeded to consider the conference report H.Rept. 116-617 as unfinished business."
+        },
+        {
+          "id": 114,
+          "chamber": "House",
+          "action_type": "ResolvingDifferences",
+          "datetime": "2020-12-08",
+          "description": "Mr. Smith (WA) brought up conference report H. Rept. 116-617 by previously agreed to special order. (consideration: CR H6919-6935)"
+        },
+        {
+          "id": 113,
+          "chamber": "House",
+          "action_type": "Floor",
+          "datetime": "2020-12-08",
+          "description": "POSTPONED PROCEEDINGS - At the conclusion of debate on the conference report to accompany H.R. 6395, the Chair put the question on adoption of the conference report and by voice vote, announced that the ayes had prevailed. Mr. Smith (WA) demanded the yeas and nays and the Chair postponed further proceedings on ordering the previous question until a time to be announced."
+        },
+        {
+          "id": 112,
+          "chamber": "House",
+          "action_type": "ResolvingDifferences",
+          "datetime": "2020-12-08",
+          "description": "The previous question was ordered without objection."
+        },
+        {
+          "id": 111,
+          "chamber": "House",
+          "action_type": "Floor",
+          "datetime": "2020-12-08",
+          "description": "DEBATE - The House proceeded with one hour of debate on the conference report to accompany H.R. 6395."
+        },
+        {
+          "id": 110,
+          "chamber": "House",
+          "action_type": "ResolvingDifferences",
+          "datetime": "2020-12-08",
+          "description": "Mr. Smith (WA) brought up conference report H. Rept. 116-617 by previously agreed to special order."
+        },
+        {
+          "id": 109,
+          "chamber": "Senate",
+          "action_type": "ResolvingDifferences",
+          "datetime": "2020-12-03",
+          "description": "Conference papers: Senate report and manager's statement held at the desk in Senate."
+        },
+        {
+          "id": 108,
+          "chamber": "Senate",
+          "action_type": "ResolvingDifferences",
+          "datetime": "2020-12-03",
+          "description": "Conferees agreed to file conference report."
+        },
+        {
+          "id": 107,
+          "chamber": "House",
+          "action_type": "Floor",
+          "datetime": "2020-12-03",
+          "description": "ORDER OF PROCEDURE - Mr. McGovern asked unanimous consent that it be in order at any time to consider a conference report to accompany H.R. 6395; that all points of order against the conference report and against its consideration be waived; that the conference report be considered as read; and that the previous question be considered as ordered on the conference report to its adoption without intervening motion except: (1) one hour of debate; and (2) one motion to recommit if applicable."
+        },
+        {
+          "id": 106,
+          "chamber": "House",
+          "action_type": "ResolvingDifferences",
+          "datetime": "2020-12-03",
+          "description": "Conference report H. Rept. 116-617 filed."
+        },
+        {
+          "id": 105,
+          "chamber": "Senate",
+          "action_type": "Floor",
+          "datetime": "2020-12-02",
+          "description": "Message on Senate action sent to the House."
+        },
+        {
+          "id": 104,
+          "chamber": "Senate",
+          "action_type": "ResolvingDifferences",
+          "datetime": "2020-12-02",
+          "description": "Senate insists on its amendment, agrees to request for a conference, appoints conferees Inhofe; Wicker; Fischer; Cotton; Rounds; Ernst; Tillis; Sullivan; Perdue; Cramer; Thune; Scott FL; Blackburn; Hawley; Reed; Shaheen; Gillibrand; Blumenthal; Hirono; Kaine; King; Heinrich; Warren; Peters; Manchin; Duckworth; Jones."
+        },
+        {
+          "id": 103,
+          "chamber": "Senate",
+          "action_type": "Floor",
+          "datetime": "2020-12-02",
+          "description": "Measure laid before Senate by unanimous consent."
+        },
+        {
+          "id": 102,
+          "chamber": "Senate",
+          "action_type": "Floor",
+          "datetime": "2020-12-02",
+          "description": "Measure laid before Senate by unanimous consent. (consideration: CR S7145)"
+        },
+        {
+          "id": 101,
+          "chamber": "Senate",
+          "action_type": "Floor",
+          "datetime": "2020-11-30",
+          "description": "Message on House action received in Senate and at desk: House requests a conference."
+        },
+        {
+          "id": 100,
+          "chamber": "House",
+          "action_type": "ResolvingDifferences",
+          "datetime": "2020-11-18",
+          "description": "Mr. Smith (WA) asked unanimous consent that the House disagree to the Senate amendment, and request a conference. (consideration: CR H5924-5925)"
+        },
+        {
+          "id": 99,
+          "chamber": "House",
+          "action_type": "ResolvingDifferences",
+          "datetime": "2020-11-18",
+          "description": "The Speaker appointed conferees - from the Committee on Ways and Means for consideration of secs. 1276, 7103, and 7104 of the House bill, and sec. 6003 of the Senate amendment, and modifications committed to conference: Neal, Panetta, and Wenstrup."
+        },
+        {
+          "id": 98,
+          "chamber": "House",
+          "action_type": "ResolvingDifferences",
+          "datetime": "2020-11-18",
+          "description": "The Speaker appointed conferees - from the Committee on Veterans' Affairs for consideration of secs. 525, 534, 535, 540A, 540B, 540C, 540E, 540H, 546, 551-53, 560B, 560E, 560F, 560G, 560H, 718, 724, 731, 734, 750H, 752-54, 760, 831, 1101, 1411, 1764, 1790, 1802, and 5502 of the House bill, and secs. 741, 744, 753, 762-64, 935, 1089, 1090A, 1090B, 1421, and 6085 of the Senate amendment, and modifications committed to conference: Takano, Lamb, and Bilirakis."
+        },
+        {
+          "id": 97,
+          "chamber": "House",
+          "action_type": "ResolvingDifferences",
+          "datetime": "2020-11-18",
+          "description": "The Speaker appointed conferees - from the Committee on Transportation and Infrastructure for consideration of secs. 311, 312, 332, 560G, 601, 829, 830B, 912, 1101, 1732, 1750, 1760, 1768, 1809, 3501, 3504, 3505, 3507-09, 3510C, 3510D, 5103, and division H of the House bill, and secs. 178, 1087, 1635, 3501, 5237, 5246, 6089, and subtitle I of title LX of division E of the Senate amendment, and modifications committed to conference: Huffman, Rouda, and Gibbs."
+        },
+        {
+          "id": 96,
+          "chamber": "House",
+          "action_type": "ResolvingDifferences",
+          "datetime": "2020-11-18",
+          "description": "The Speaker appointed conferees - from the Committee on Small Business for consideration of secs. 831-33, 835-40, 840A, 841, 844, and 1633 of the House bill, and secs. 871, 872, 1642, 5871-75, and 5877 of the Senate amendment, and modifications committed to conference: Velazquez, Golden, and Chabot."
+        },
+        {
+          "id": 95,
+          "chamber": "House",
+          "action_type": "ResolvingDifferences",
+          "datetime": "2020-11-18",
+          "description": "The Speaker appointed conferees - from the Committee on Science, Space, and Technology for consideration of sec. 229, subtitle D of title II of division A, secs. 327, 333, 341, 1744, 1771, 1806, 1807, 1821, 1824, 1825, division E, secs. 5502 and 10104 of the House bill, and secs. 318, 1098, 1099, subtitle C of title LII of division E, secs. 5231-38, and 6087 of the Senate amendment, and modifications committed to conference: Johnson (TX), Sherrill, and Garcia (CA)."
+        },
+        {
+          "id": 94,
+          "chamber": "House",
+          "action_type": "ResolvingDifferences",
+          "datetime": "2020-11-18",
+          "description": "The Speaker appointed conferees - from the Committee on Oversight and Reform for consideration of secs. 373, 813, 815, 825, 830B, 833, 848, 1101, 1102, 1104, 1105, 1108, 1111, 1114, 1115, subititles B and C of title XI of division A, secs. 1635, 1639, 1640C, subtitle B of title XVII of division A, secs. 1744, 1745, 1769, 1770, 1774, 1793, 1808, 9208, and 11410 of the House bill, and secs. 631, 1103-06, 1109-13, 5244, 6047, and 9306 of the Senate amendment, and modifications committed to conference: Maloney, Carolyn B., Lynch, and Comer."
+        },
+        {
+          "id": 93,
+          "chamber": "House",
+          "action_type": "ResolvingDifferences",
+          "datetime": "2020-11-18",
+          "description": "The Speaker appointed conferees - from the Committee on Natural Resources for consideration of secs. 601, 626, 627, 1744, 1794, 1795, 2834-36, subtitle E of title XXVIII of division B, and divisions O and P of the House bill, and secs. 315, 2861-63, 2887, 6081, and 7861 of the Senate amendment, and modifications committed to conference: Grijalva, Haaland, and Bishop (UT)."
+        },
+        {
+          "id": 92,
+          "chamber": "House",
+          "action_type": "ResolvingDifferences",
+          "datetime": "2020-11-18",
+          "description": "The Speaker appointed conferees - from the Committee on the Judiciary for consideration of secs. 281, 540D, 814, 1055, 1215, 1299O-6, 1299T-4, 1299T-5, 1640A, 1731, 1733, 1762, and 1763 of the House bill, and secs. 1296 and 6088 of the Senate amendment, and modifications committed to conference: Nadler, Mucarsel-Powell, and Steube."
+        },
+        {
+          "id": 91,
+          "chamber": "House",
+          "action_type": "ResolvingDifferences",
+          "datetime": "2020-11-18",
+          "description": "The Speaker appointed conferees - from the Committee on House Administration for consideration of secs. 536, 1101, and 1751 of the House bill, and modifications committed to conference: Lofgren, Fudge, and Davis, Rodney."
+        },
+        {
+          "id": 90,
+          "chamber": "House",
+          "action_type": "ResolvingDifferences",
+          "datetime": "2020-11-18",
+          "description": "The Speaker appointed conferees - from the Committee on Homeland Security for consideration of secs. 1630, 1631, 1637, 1640A, 1640D, 1640F, 1760, 1784, 1793, 1804, and 9508 of the House bill, and secs. 6088, 6096D, 6613, and 6614 of the Senate amendment, and modifications committed to conference: Torres Small (NM), Slotkin, and Green (TN)."
+        },
+        {
+          "id": 89,
+          "chamber": "House",
+          "action_type": "ResolvingDifferences",
+          "datetime": "2020-11-18",
+          "description": "The Speaker appointed conferees - from the Committee on Foreign Affairs for consideration of secs. 213, 843, subtitle C of title XI of division A, secs. 1202, 1203, 1207, 1221-24, 1231-33, 1238, 1248, 1249, 1251, 1260D, 1260E, 1261, 1266, 1272-74, 1276, 1280, 1286, 1290-92, 1294, 1296, 1299, 1299B, 1299G, 1299H, 1299K, subititles H-K of title XII of division A, secs. 1299Q-1, 1299Q-2, subtitle M of title XII of division A, secs. 1299T-4, 1299T-5, 1521, 1640F, 1659, 1757, 1759, 1823, and division I of the House bill, and secs. 1201-03, 1205-07, 1210, 1213, subtitle C of title XII and division A, secs. 1231-33, 1236, 1240, 1241, 1251, 1253-56, 1263, 1281, 1283, 1286, 1287, subtitle H of title XII of division A, subtitle C of title XV of division A, sec. 1661, title XVII of division A, secs. 6231, 6251, 6284, 6286, 6293-96, 6299, 6299A, 6299B, 6299D, and 6299F of the Senate amendment, and modifications committed to conference: Engel, Sherman, and McCaul."
+        },
+        {
+          "id": 88,
+          "chamber": "House",
+          "action_type": "ResolvingDifferences",
+          "datetime": "2020-11-18",
+          "description": "The Speaker appointed conferees - from the Committee on Financial Services for consideration of secs. 902, 1248, 1249, 1299R-9, 1768, 1776, 1779, 1790, 1792, 1798, 1803, 1808, 1812, subtitles H and I of title XVII of division A, and divisions G, J, K, and M of the House bill, and secs. 1706-10 and 6231 of the Senate amendment, and modifications committed to conference: Waters, Vargas, and Luetkemeyer."
+        },
+        {
+          "id": 87,
+          "chamber": "House",
+          "action_type": "ResolvingDifferences",
+          "datetime": "2020-11-18",
+          "description": "The Speaker appointed conferees - from the Committee on Energy and Commerce for consideration of secs. 223, 229, 332, 335, 535, 540H, 601, 705, 736, 1299N-2, 1641, 1760, 1761, 1772, 1793, 1821, 1823, 1824, 2835, 3201, 3511, 3601, 5101-04, 5109, 10306, and 11206 of the House bill, and secs. 311, 319, 703, 1053, 1091, 1092, 1094, 1098, 1099, 2841, 3121, 3125, 3131, 3132, 5239, 6082-84, subtitle I of title LX of division E, secs. 6299F, 6614, 6704, and 6706 of the Senate amendment and modifications committed to conference: Pallone, DeGette, and Walden."
+        },
+        {
+          "id": 86,
+          "chamber": "House",
+          "action_type": "ResolvingDifferences",
+          "datetime": "2020-11-18",
+          "description": "The Speaker appointed conferees - from the Committee on Education and Labor for the consideration of secs. 212, 279, 569, 570, 1110, 1791, 1797, 1833, and 1834 of the House bill, and secs. 516, 561-63, 565, 566, 1090, 5211, 6047, 6091, and 6615 of the Senate amendment, and modifications committed to conference: Scott (VA), Trahan, and Guthrie."
+        },
+        {
+          "id": 85,
+          "chamber": "House",
+          "action_type": "ResolvingDifferences",
+          "datetime": "2020-11-18",
+          "description": "The Speaker appointed conferees - from the Committee on the Budget for consideration of secs. 1002 and 8003 of the House bill, and secs. 4, 126, and 1086 of the Senate amendment, and modifications committed to conference: Morelle, Horsford, and Stewart."
+        },
+        {
+          "id": 84,
+          "chamber": "House",
+          "action_type": "ResolvingDifferences",
+          "datetime": "2020-11-18",
+          "description": "The Speaker appointed conferees - from the Committee on Agriculture for consideration of secs. 3601 and 3602 of the House bill, and sec. 1053 of the Senate amendment, and modifications committed to conference: Peterson, Spanberger, and Conaway."
+        },
+        {
+          "id": 83,
+          "chamber": "House",
+          "action_type": "ResolvingDifferences",
+          "datetime": "2020-11-18",
+          "description": "The Speaker appointed conferees - from the Permanent Select Committee on Intelligence for consideration of matters within the jurisdiction of that committee under clause 11 of rule X: Schiff, Sewell (AL), and Nunes."
+        },
+        {
+          "id": 82,
+          "chamber": "House",
+          "action_type": "ResolvingDifferences",
+          "datetime": "2020-11-18",
+          "description": "The Speaker appointed conferees - from the Committee on Armed Services for consideration of the House bill and the Senate amendment, and for modifications committed to conference: Smith of Washington, Davis of California, Langevin, Larsen of Washington, Cooper, Courtney, Garamendi, Speier, Norcross, Gallego, Moulton, Carbajal, Brown of Maryland, Khanna, Keating, Vela, Kim, Kendra S. Horn of Oklahoma, Cisneros, Thornberry, Wilson of South Carolina, Turner, Rogers of Alabama, Lamborn, Wittman, Hartzler, Austin Scott of Georgia, Stefanik, Kelly of Mississippi, Gallagher, Bacon, and Banks."
+        },
+        {
+          "id": 81,
+          "chamber": "House",
+          "action_type": "ResolvingDifferences",
+          "datetime": "2020-11-18",
+          "description": "Motion to reconsider laid on the table Agreed to without objection."
+        },
+        {
+          "id": 80,
+          "chamber": "House",
+          "action_type": "ResolvingDifferences",
+          "datetime": "2020-11-18",
+          "description": "On motion to close portions of the conference Agreed to by the Yeas and Nays: 396 - 8 (Roll no. 222)."
+        },
+        {
+          "id": 79,
+          "chamber": "House",
+          "action_type": "ResolvingDifferences",
+          "datetime": "2020-11-18",
+          "description": "Mr. Smith (WA) moved to close portions of the conference."
+        },
+        {
+          "id": 78,
+          "chamber": "House",
+          "action_type": "ResolvingDifferences",
+          "datetime": "2020-11-18",
+          "description": "On motion that the House disagree to the Senate amendment, and request a conference Agreed to without objection."
+        },
+        {
+          "id": 77,
+          "chamber": "House",
+          "action_type": "ResolvingDifferences",
+          "datetime": "2020-11-18",
+          "description": "Mr. Smith (WA) asked unanimous consent that the House disagree to the Senate amendment, and request a conference."
+        },
+        {
+          "id": 76,
+          "chamber": "Senate",
+          "action_type": "Floor",
+          "datetime": "2020-11-17",
+          "description": "Message on Senate action sent to the House."
+        },
+        {
+          "id": 75,
+          "chamber": "Senate",
+          "action_type": "Floor",
+          "datetime": "2020-11-16",
+          "description": "Passed Senate with an amendment by Voice Vote."
+        },
+        {
+          "id": 74,
+          "chamber": "Senate",
+          "action_type": "Floor",
+          "datetime": "2020-11-16",
+          "description": "Measure laid before Senate by unanimous consent."
+        },
+        {
+          "id": 73,
+          "chamber": "Senate",
+          "action_type": "Floor",
+          "datetime": "2020-11-16",
+          "description": "Passed Senate with an amendment by Voice Vote. (text of amendment in the nature of a substitute: CR S6723-6974)"
+        },
+        {
+          "id": 72,
+          "chamber": "Senate",
+          "action_type": "Floor",
+          "datetime": "2020-11-16",
+          "description": "Measure laid before Senate by unanimous consent. (consideration: CR S6688)"
+        },
+        {
+          "id": 71,
+          "chamber": "Senate",
+          "action_type": "Calendars",
+          "datetime": "2020-08-05",
+          "description": "Read twice. Placed on Senate Legislative Calendar under General Orders. Calendar No. 505."
+        },
+        {
+          "id": 70,
+          "chamber": "Senate",
+          "action_type": "IntroReferral",
+          "datetime": "2020-08-04",
+          "description": "Received in the Senate."
+        },
+        {
+          "id": 69,
+          "chamber": "House",
+          "action_type": "Floor",
+          "datetime": "2020-07-21",
+          "description": "Mr. Green (TN) moved to recommit with instructions to the Committee on Armed Services. (text: CR H3603-3604)"
+        },
+        {
+          "id": 68,
+          "chamber": "House",
+          "action_type": "Floor",
+          "datetime": "2020-07-21",
+          "description": "Considered as unfinished business. (consideration: CR H3598-3607)"
+        },
+        {
+          "id": 67,
+          "chamber": "House",
+          "action_type": "Floor",
+          "datetime": "2020-07-21",
+          "description": "The title of the measure was amended. Agreed to without objection."
+        },
+        {
+          "id": 66,
+          "chamber": "House",
+          "action_type": "Floor",
+          "datetime": "2020-07-21",
+          "description": "The Clerk was authorized to correct section numbers, punctuation, and cross references, and to make other necessary technical and conforming corrections in the engrossment of H.R. 6395."
+        },
+        {
+          "id": 65,
+          "chamber": "House",
+          "action_type": "Floor",
+          "datetime": "2020-07-21",
+          "description": "Motion to reconsider laid on the table Agreed to without objection."
+        },
+        {
+          "id": 64,
+          "chamber": "House",
+          "action_type": "Floor",
+          "datetime": "2020-07-21",
+          "description": "On passage Passed by the Yeas and Nays: 295 - 125 (Roll no. 152)."
+        },
+        {
+          "id": 63,
+          "chamber": "House",
+          "action_type": "Floor",
+          "datetime": "2020-07-21",
+          "description": "On motion to recommit with instructions Failed by the Yeas and Nays: 201 - 219 (Roll no. 151)."
+        },
+        {
+          "id": 62,
+          "chamber": "House",
+          "action_type": "Floor",
+          "datetime": "2020-07-21",
+          "description": "The previous question on the motion to recommit with instructions was ordered without objection."
+        },
+        {
+          "id": 61,
+          "chamber": "House",
+          "action_type": "Floor",
+          "datetime": "2020-07-21",
+          "description": "DEBATE - The House proceeded with 10 minutes of debate on the Green (TN) motion to recommit with instructions pending the reservation of a point of order. The instructions contained in the motion seek to require the bill to be reported back to the House with an amendment to at the end of title XVII, add a new subtitle entitled 'Defend COVID Research From Hackers Act'. Subsequently, the point of order was withdrawn."
+        },
+        {
+          "id": 60,
+          "chamber": "House",
+          "action_type": "Floor",
+          "datetime": "2020-07-21",
+          "description": "Mr. Green (TN) moved to recommit with instructions to the Committee on Armed Services."
+        },
+        {
+          "id": 59,
+          "chamber": "House",
+          "action_type": "Floor",
+          "datetime": "2020-07-21",
+          "description": "The previous question was ordered pursuant to the rule."
+        },
+        {
+          "id": 58,
+          "chamber": "House",
+          "action_type": "Floor",
+          "datetime": "2020-07-21",
+          "description": "Without objection, a motion to reconsider was laid upon the table"
+        },
+        {
+          "id": 57,
+          "chamber": "House",
+          "action_type": "Floor",
+          "datetime": "2020-07-21",
+          "description": "Considered as unfinished business."
+        },
+        {
+          "id": 56,
+          "chamber": "House",
+          "action_type": "Floor",
+          "datetime": "2020-07-21",
+          "description": "Pursuant to clause 1(c) of Rule XIX, the House resumed consideration of H.R. 6395."
+        },
+        {
+          "id": 55,
+          "chamber": "House",
+          "action_type": "Floor",
+          "datetime": "2020-07-20",
+          "description": "Considered as unfinished business. (consideration: CR H3503-3513)"
+        },
+        {
+          "id": 54,
+          "chamber": "House",
+          "action_type": "Floor",
+          "datetime": "2020-07-20",
+          "description": "Considered under the provisions of rule H. Res. 1053. (consideration: CR H3114-3503)"
+        },
+        {
+          "id": 53,
+          "chamber": "House",
+          "action_type": "Floor",
+          "datetime": "2020-07-20",
+          "description": "Pursuant to clause 1(c) of Rule XIX, further proceedings on H.R. 6395 were postponed."
+        },
+        {
+          "id": 52,
+          "chamber": "House",
+          "action_type": "Floor",
+          "datetime": "2020-07-20",
+          "description": "Without objection, a motion to reconsider was laid upon the table"
+        },
+        {
+          "id": 51,
+          "chamber": "House",
+          "action_type": "Floor",
+          "datetime": "2020-07-20",
+          "description": "DEBATE - Pursuant to the provisions of H. Res. 1053, the House proceeded with 30 minutes of debate on the Smith (WA) amendment en bloc No. 2."
+        },
+        {
+          "id": 50,
+          "chamber": "House",
+          "action_type": "Floor",
+          "datetime": "2020-07-20",
+          "description": "DEBATE - Pursuant to the provisions of H. Res. 1053, the House proceeded with 10 minutes of debate on the Panetta amendment No. 167."
+        },
+        {
+          "id": 49,
+          "chamber": "House",
+          "action_type": "Floor",
+          "datetime": "2020-07-20",
+          "description": "POSTPONED PROCEEDINGS - At the conclusion of debate on the Takano amendment No. 29, the Chair put the question on adoption of the amendment, and by voice vote, announced that the ayes had prevailed. Ms. Foxx (NC) demanded the yeas and nays and the Chair postponed further proceedings on the amendment until a time to be announced."
+        },
+        {
+          "id": 48,
+          "chamber": "House",
+          "action_type": "Floor",
+          "datetime": "2020-07-20",
+          "description": "DEBATE - Pursuant to the provisions of H. Res. 1053, the House proceeded with 10 minutes of debate on the Takano amendment No. 29."
+        },
+        {
+          "id": 47,
+          "chamber": "House",
+          "action_type": "Floor",
+          "datetime": "2020-07-20",
+          "description": "Without objection, a motion to reconsider was laid upon the table."
+        },
+        {
+          "id": 46,
+          "chamber": "House",
+          "action_type": "Floor",
+          "datetime": "2020-07-20",
+          "description": "DEBATE - Pursuant to the provisions of H. Res. 1053, the House proceeded with 10 minutes of debate on the Houlahan amendment No. 19."
+        },
+        {
+          "id": 45,
+          "chamber": "House",
+          "action_type": "Floor",
+          "datetime": "2020-07-20",
+          "description": "DEBATE - Pursuant to the provisions of H. Res. 1053, the House proceeded with 10 minutes of debate on the Adams amendment No. 17."
+        },
+        {
+          "id": 44,
+          "chamber": "House",
+          "action_type": "Floor",
+          "datetime": "2020-07-20",
+          "description": "DEBATE - Pursuant to the provisions of H. Res. 1053, the House proceeded with 10 minutes of debate on the Gallego amendment No. 13."
+        },
+        {
+          "id": 43,
+          "chamber": "House",
+          "action_type": "Floor",
+          "datetime": "2020-07-20",
+          "description": "UNFINISHED BUSINESS - The Chair announced that the unfinished business was the question on adoption of the Escobar amendment which had been debated earlier and on which further proceedings had been postponed."
+        },
+        {
+          "id": 42,
+          "chamber": "House",
+          "action_type": "Floor",
+          "datetime": "2020-07-20",
+          "description": "Considered as unfinished business."
+        },
+        {
+          "id": 41,
+          "chamber": "House",
+          "action_type": "Floor",
+          "datetime": "2020-07-20",
+          "description": "POSTPONED PROCEEDINGS - Pursuant to clause 1(c) of Rule XIX, further proceedings on H.R. 6395 were postponed."
+        },
+        {
+          "id": 40,
+          "chamber": "House",
+          "action_type": "Floor",
+          "datetime": "2020-07-20",
+          "description": "POSTPONED PROCEEDINGS - At the conclusion of debate on the Smith (WA) amendment en bloc No. 1, the Chair put the question on adoption of the amendment, and by voice vote, announced that the ayes had prevailed. Mr. Massie demanded the yeas and nays and the Chair postponed further proceedings on the amendment until a time to be announced."
+        },
+        {
+          "id": 39,
+          "chamber": "House",
+          "action_type": "Floor",
+          "datetime": "2020-07-20",
+          "description": "DEBATE - Pursuant to the provisions of H. Res. 1053, the House proceeded with 30 minutes of debate on the Smith (WA) amendment en bloc No. 1."
+        },
+        {
+          "id": 38,
+          "chamber": "House",
+          "action_type": "Floor",
+          "datetime": "2020-07-20",
+          "description": "POSTPONED PROCEEDINGS - At the conclusion of debate on the Dean amendment No. 11, the Chair put the question on adoption of the amendment, and by voice vote, announced that the ayes had prevailed. Mr. Luetkemeyer demanded the yeas and nays and the Chair postponed further proceedings on the amendment until a time to be announced."
+        },
+        {
+          "id": 37,
+          "chamber": "House",
+          "action_type": "Floor",
+          "datetime": "2020-07-20",
+          "description": "DEBATE - Pursuant to the provisions of H. Res. 1053, the House proceeded with 10 minutes of debate on the Dean amendment No. 11."
+        },
+        {
+          "id": 36,
+          "chamber": "House",
+          "action_type": "Floor",
+          "datetime": "2020-07-20",
+          "description": "POSTPONED PROCEEDINGS - At the conclusion of debate on the Pocan amendment No. 9, the Chair put the question on adoption of the amendment, and by voice vote, announced that the ayes had prevailed. Mr. Thornberry demanded the yeas and nays and the Chair postponed further proceedings on the amendment until a time to be announced."
+        },
+        {
+          "id": 35,
+          "chamber": "House",
+          "action_type": "Floor",
+          "datetime": "2020-07-20",
+          "description": "DEBATE - Pursuant to the provisions of H. Res. 1053, the House proceeded with 10 minutes of debate on the Pocan amendment No. 9."
+        },
+        {
+          "id": 34,
+          "chamber": "House",
+          "action_type": "Floor",
+          "datetime": "2020-07-20",
+          "description": "POSTPONED PROCEEDINGS - At the conclusion of debate on the Neguse amendment No. 8, the Chair put the question on adoption of the amendment, and by voice vote, announced that the ayes had prevailed. Mr. Gosar demanded the yeas and nays and the Chair postponed further proceedings on the amendment until a time to be announced."
+        },
+        {
+          "id": 33,
+          "chamber": "House",
+          "action_type": "Floor",
+          "datetime": "2020-07-20",
+          "description": "DEBATE - Pursuant to the provisions of H. Res. 1053, the House proceeded with 10 minutes of debate on the Neguse amendment No. 8."
+        },
+        {
+          "id": 32,
+          "chamber": "House",
+          "action_type": "Floor",
+          "datetime": "2020-07-20",
+          "description": "POSTPONED PROCEEDINGS - At the conclusion of debate on the DeGette amendment No. 7, the Chair put the question on adoption of the amendment, and by voice vote, announced that the ayes had prevailed. Mr. Lamborn demanded the yeas and nays and the Chair postponed further proceedings on the amendment until a time to be announced."
+        },
+        {
+          "id": 31,
+          "chamber": "House",
+          "action_type": "Floor",
+          "datetime": "2020-07-20",
+          "description": "DEBATE - Pursuant to the provisions of H. Res. 1053, the House proceeded with 10 minutes of debate on the DeGette amendment No. 7."
+        },
+        {
+          "id": 30,
+          "chamber": "House",
+          "action_type": "Floor",
+          "datetime": "2020-07-20",
+          "description": "POSTPONED PROCEEDINGS - At the conclusion of debate on the Jayapal amendment No. 6, the Chair put the question on adoption of the amendment, and by voice vote, announced that the ayes had prevailed. Mr. Thornberry demanded the yeas and nays and the Chair postponed further proceedings on the amendment until a time to be announced."
+        },
+        {
+          "id": 29,
+          "chamber": "House",
+          "action_type": "Floor",
+          "datetime": "2020-07-20",
+          "description": "DEBATE - Pursuant to the provisions of H. Res. 1053, the House proceeded with 10 minutes of debate on the Jayapal amendment No. 6."
+        },
+        {
+          "id": 28,
+          "chamber": "House",
+          "action_type": "Floor",
+          "datetime": "2020-07-20",
+          "description": "POSTPONED PROCEEDINGS - At the conclusion of debate on the Omar amendment No. 5, the Chair put the question on adoption of the amendment, and by voice vote, announced that the ayes had prevailed. Mr. Thornberry demanded the yeas and nays and the Chair postponed further proceedings on the amendment until a time to be announced."
+        },
+        {
+          "id": 27,
+          "chamber": "House",
+          "action_type": "Floor",
+          "datetime": "2020-07-20",
+          "description": "DEBATE - Pursuant to the provisions of H. Res. 1053, the House proceeded with 10 minutes of debate on the Omar amendment No. 5."
+        },
+        {
+          "id": 26,
+          "chamber": "House",
+          "action_type": "Floor",
+          "datetime": "2020-07-20",
+          "description": "POSTPONED PROCEEDINGS - At the conclusion of debate on the McAdams amendment No. 4, the Chair put the question on adoption of the amendment, and by voice vote, announced that the ayes had prevailed. Mr. Thornberry demanded the yeas and nays and the Chair postponed further proceedings on the amendment until a time to be announced."
+        },
+        {
+          "id": 25,
+          "chamber": "House",
+          "action_type": "Floor",
+          "datetime": "2020-07-20",
+          "description": "DEBATE - Pursuant to the provisions of H. Res. 1053, the House proceeded with 10 minutes of debate on the McAdams amendment No. 4."
+        },
+        {
+          "id": 24,
+          "chamber": "House",
+          "action_type": "Floor",
+          "datetime": "2020-07-20",
+          "description": "POSTPONED PROCEEDINGS - At the conclusion of debate on the Escobar amendment No. 3, the Chair put the question on adoption of the amendment, and by voice vote, announced that the ayes had prevailed. Mr. Lamborn demanded the yeas and nays and the Chair postponed further proceedings on the amendment until a time to be announced."
+        },
+        {
+          "id": 23,
+          "chamber": "House",
+          "action_type": "Floor",
+          "datetime": "2020-07-20",
+          "description": "DEBATE - Pursuant to the provisions of H. Res. 1053, the House proceeded with 10 minutes of debate on the Escobar amendment No. 3."
+        },
+        {
+          "id": 22,
+          "chamber": "House",
+          "action_type": "Floor",
+          "datetime": "2020-07-20",
+          "description": "DEBATE - The House proceeded with one hour of debate on H.R. 6395."
+        },
+        {
+          "id": 21,
+          "chamber": "House",
+          "action_type": "Floor",
+          "datetime": "2020-07-20",
+          "description": "Rule provides for consideration of H.R. 6395, H.R. 7027, H.R. 7327 and H.R. 1957. Provides for the consideration of H.R. 6395, H.R. 7027, H.R. 7327, and the Senate Amendments to H.R. 1957. Rule also provides that H.Res. 967, as amended by H.Res. 1017, is further amended by inserting a new date."
+        },
+        {
+          "id": 20,
+          "chamber": "House",
+          "action_type": "Floor",
+          "datetime": "2020-07-20",
+          "description": "Considered under the provisions of rule H. Res. 1053."
+        },
+        {
+          "id": 19,
+          "chamber": "House",
+          "action_type": "Floor",
+          "datetime": "2020-07-20",
+          "description": "Rules Committee Resolution H. Res. 1053 Reported to House. Rule provides for consideration of H.R. 6395, H.R. 7027, H.R. 7327 and H.R. 1957. Provides for the consideration of H.R. 6395, H.R. 7027, H.R. 7327, and the Senate Amendments to H.R. 1957. Rule also provides that H.Res. 967, as amended by H.Res. 1017, is further amended by inserting a new date."
+        },
+        {
+          "id": 18,
+          "chamber": "House",
+          "action_type": "Committee",
+          "datetime": "2020-07-16",
+          "description": "Supplemental report filed by the Committee on Armed Services, H. Rept. 116-442, Part II."
+        },
+        {
+          "id": 17,
+          "chamber": "House",
+          "action_type": "Floor",
+          "datetime": "2020-07-16",
+          "description": "The Chair announced that the Committee on Armed Services was authorized to file a supplemental report on the bill H.R. 6395. Agreed to without objection."
+        },
+        {
+          "id": 16,
+          "chamber": "House",
+          "action_type": "Calendars",
+          "datetime": "2020-07-09",
+          "description": "Placed on the Union Calendar, Calendar No. 354."
+        },
+        {
+          "id": 15,
+          "chamber": "House",
+          "action_type": "Committee",
+          "datetime": "2020-07-09",
+          "description": "Reported (Amended) by the Committee on Armed Services. H. Rept. 116-442."
+        },
+        {
+          "id": 14,
+          "chamber": "House",
+          "action_type": "Committee",
+          "datetime": "2020-07-01",
+          "description": "Ordered to be Reported (Amended) by the Yeas and Nays: 56 - 0."
+        },
+        {
+          "id": 13,
+          "chamber": "House",
+          "action_type": "Committee",
+          "datetime": "2020-07-01",
+          "description": "Committee Consideration and Mark-up Session Held."
+        },
+        {
+          "id": 12,
+          "chamber": "House",
+          "action_type": "Committee",
+          "datetime": "2020-06-23",
+          "description": "Forwarded by Subcommittee to Full Committee by Voice Vote ."
+        },
+        {
+          "id": 11,
+          "chamber": "House",
+          "action_type": "Committee",
+          "datetime": "2020-06-23",
+          "description": "Subcommittee Consideration and Mark-up Session Held."
+        },
+        {
+          "id": 10,
+          "chamber": "House",
+          "action_type": "Committee",
+          "datetime": "2020-06-23",
+          "description": "Forwarded by Subcommittee to Full Committee (Amended) by Voice Vote ."
+        },
+        {
+          "id": 9,
+          "chamber": "House",
+          "action_type": "Committee",
+          "datetime": "2020-06-22",
+          "description": "Forwarded by Subcommittee to Full Committee by Voice Vote ."
+        },
+        {
+          "id": 8,
+          "chamber": "House",
+          "action_type": "Committee",
+          "datetime": "2020-06-22",
+          "description": "Subcommittee Consideration and Mark-up Session Held."
+        },
+        {
+          "id": 7,
+          "chamber": "House",
+          "action_type": "Committee",
+          "datetime": "2020-03-27",
+          "description": "Referred to the Subcommittee on Tactical Air and Land Forces."
+        },
+        {
+          "id": 6,
+          "chamber": "House",
+          "action_type": "Committee",
+          "datetime": "2020-03-27",
+          "description": "Referred to the Subcommittee on Strategic Forces."
+        },
+        {
+          "id": 5,
+          "chamber": "House",
+          "action_type": "Committee",
+          "datetime": "2020-03-27",
+          "description": "Referred to the Subcommittee on Seapower and Projection Forces."
+        },
+        {
+          "id": 4,
+          "chamber": "House",
+          "action_type": "Committee",
+          "datetime": "2020-03-27",
+          "description": "Referred to the Subcommittee on Readiness."
+        },
+        {
+          "id": 3,
+          "chamber": "House",
+          "action_type": "Committee",
+          "datetime": "2020-03-27",
+          "description": "Referred to the Subcommittee on Military Personnel."
+        },
+        {
+          "id": 2,
+          "chamber": "House",
+          "action_type": "Committee",
+          "datetime": "2020-03-27",
+          "description": "Referred to the Subcommittee on Intelligence and Emerging Threats and Capabilities."
+        },
+        {
+          "id": 1,
+          "chamber": "House",
+          "action_type": "IntroReferral",
+          "datetime": "2020-03-26",
+          "description": "Referred to the House Committee on Armed Services."
+        }
+      ],
+      "presidential_statements": [
+        {
+          "date": "",
+          "position": "",
+          "url": "https://www.whitehouse.gov/wp-content/uploads/2020/07/SAP_HR-6395.pdf",
+          "veto_threat": "",
+          "would_sign": "false"
+        },
+        {
+          "date": "",
+          "position": "",
+          "url": "https://www.whitehouse.gov/wp-content/uploads/2020/12/SAP_HR_6395.pdf",
+          "veto_threat": "",
+          "would_sign": "false"
+        }
+      ],
+      "votes": [
+        {
+          "chamber": "House",
+          "date": "2020-12-28",
+          "time": "19:05:00",
+          "roll_call": "253",
+          "question": "On Passage, Objections of the President to the Contrary Notwithstanding",
+          "result": "Passed",
+          "total_yes": 322,
+          "total_no": 87,
+          "total_not_voting": 21,
+          "api_url": "https://api.propublica.org/congress/v1/116/house/sessions/2/votes/253.json"
+        },
+        {
+          "chamber": "House",
+          "date": "2020-12-08",
+          "time": "18:25:00",
+          "roll_call": "238",
+          "question": "On Agreeing to the Conference Report",
+          "result": "Passed",
+          "total_yes": 335,
+          "total_no": 78,
+          "total_not_voting": 16,
+          "api_url": "https://api.propublica.org/congress/v1/116/house/sessions/2/votes/238.json"
+        },
+        {
+          "chamber": "House",
+          "date": "2020-11-18",
+          "time": "17:56:00",
+          "roll_call": "222",
+          "question": "On Closing Portions of the Conference",
+          "result": "Passed",
+          "total_yes": 396,
+          "total_no": 8,
+          "total_not_voting": 26,
+          "api_url": "https://api.propublica.org/congress/v1/116/house/sessions/2/votes/222.json"
+        },
+        {
+          "chamber": "House",
+          "date": "2020-07-21",
+          "time": "13:42:00",
+          "roll_call": "152",
+          "question": "On Passage",
+          "result": "Passed",
+          "total_yes": 295,
+          "total_no": 125,
+          "total_not_voting": 11,
+          "api_url": "https://api.propublica.org/congress/v1/116/house/sessions/2/votes/152.json"
+        },
+        {
+          "chamber": "House",
+          "date": "2020-07-21",
+          "time": "13:04:00",
+          "roll_call": "151",
+          "question": "On Motion to Recommit with Instructions",
+          "result": "Failed",
+          "total_yes": 201,
+          "total_no": 219,
+          "total_not_voting": 11,
+          "api_url": "https://api.propublica.org/congress/v1/116/house/sessions/2/votes/151.json"
+        },
+        {
+          "chamber": "House",
+          "date": "2020-07-21",
+          "time": "11:58:00",
+          "roll_call": "150",
+          "question": "On Agreeing to the Amendment",
+          "result": "Agreed to",
+          "total_yes": 232,
+          "total_no": 184,
+          "total_not_voting": 15,
+          "api_url": "https://api.propublica.org/congress/v1/116/house/sessions/2/votes/150.json"
+        },
+        {
+          "chamber": "House",
+          "date": "2020-07-21",
+          "time": "11:02:00",
+          "roll_call": "149",
+          "question": "On Agreeing to the Amendment",
+          "result": "Agreed to",
+          "total_yes": 217,
+          "total_no": 198,
+          "total_not_voting": 16,
+          "api_url": "https://api.propublica.org/congress/v1/116/house/sessions/2/votes/149.json"
+        },
+        {
+          "chamber": "House",
+          "date": "2020-07-21",
+          "time": "10:16:00",
+          "roll_call": "148",
+          "question": "On Agreeing to the Amendment",
+          "result": "Failed",
+          "total_yes": 93,
+          "total_no": 324,
+          "total_not_voting": 14,
+          "api_url": "https://api.propublica.org/congress/v1/116/house/sessions/2/votes/148.json"
+        },
+        {
+          "chamber": "House",
+          "date": "2020-07-21",
+          "time": "09:31:00",
+          "roll_call": "147",
+          "question": "On Agreeing to the Amendment",
+          "result": "Agreed to",
+          "total_yes": 234,
+          "total_no": 181,
+          "total_not_voting": 16,
+          "api_url": "https://api.propublica.org/congress/v1/116/house/sessions/2/votes/147.json"
+        },
+        {
+          "chamber": "House",
+          "date": "2020-07-21",
+          "time": "08:45:00",
+          "roll_call": "146",
+          "question": "On Agreeing to the Amendment",
+          "result": "Agreed to",
+          "total_yes": 234,
+          "total_no": 179,
+          "total_not_voting": 18,
+          "api_url": "https://api.propublica.org/congress/v1/116/house/sessions/2/votes/146.json"
+        },
+        {
+          "chamber": "House",
+          "date": "2020-07-21",
+          "time": "08:00:00",
+          "roll_call": "145",
+          "question": "On Agreeing to the Amendment",
+          "result": "Failed",
+          "total_yes": 173,
+          "total_no": 241,
+          "total_not_voting": 17,
+          "api_url": "https://api.propublica.org/congress/v1/116/house/sessions/2/votes/145.json"
+        },
+        {
+          "chamber": "House",
+          "date": "2020-07-21",
+          "time": "07:19:00",
+          "roll_call": "144",
+          "question": "On Agreeing to the Amendment",
+          "result": "Failed",
+          "total_yes": 129,
+          "total_no": 284,
+          "total_not_voting": 18,
+          "api_url": "https://api.propublica.org/congress/v1/116/house/sessions/2/votes/144.json"
+        },
+        {
+          "chamber": "House",
+          "date": "2020-07-20",
+          "time": "19:08:00",
+          "roll_call": "143",
+          "question": "On Agreeing to the Amendment",
+          "result": "Agreed to",
+          "total_yes": 336,
+          "total_no": 71,
+          "total_not_voting": 23,
+          "api_url": "https://api.propublica.org/congress/v1/116/house/sessions/2/votes/143.json"
+        },
+        {
+          "chamber": "House",
+          "date": "2020-07-20",
+          "time": "18:33:00",
+          "roll_call": "142",
+          "question": "On Agreeing to the Amendment",
+          "result": "Agreed to",
+          "total_yes": 227,
+          "total_no": 179,
+          "total_not_voting": 24,
+          "api_url": "https://api.propublica.org/congress/v1/116/house/sessions/2/votes/142.json"
+        },
+        {
+          "chamber": "House",
+          "date": "2020-07-20",
+          "time": "17:54:00",
+          "roll_call": "141",
+          "question": "On Agreeing to the Amendment",
+          "result": "Agreed to",
+          "total_yes": 215,
+          "total_no": 190,
+          "total_not_voting": 25,
+          "api_url": "https://api.propublica.org/congress/v1/116/house/sessions/2/votes/141.json"
+        },
+        {
+          "chamber": "Senate",
+          "date": "2021-01-01",
+          "time": "08:38:00",
+          "roll_call": "292",
+          "question": "On Overriding the Veto",
+          "result": "Veto Overridden",
+          "total_yes": 81,
+          "total_no": 13,
+          "total_not_voting": 6,
+          "api_url": "https://api.propublica.org/congress/v1/116/senate/sessions/2/votes/292.json"
+        },
+        {
+          "chamber": "Senate",
+          "date": "2021-01-01",
+          "time": "08:01:00",
+          "roll_call": "291",
+          "question": "On the Cloture Motion",
+          "result": "Cloture Motion Agreed to",
+          "total_yes": 80,
+          "total_no": 12,
+          "total_not_voting": 8,
+          "api_url": "https://api.propublica.org/congress/v1/116/senate/sessions/2/votes/291.json"
+        },
+        {
+          "chamber": "Senate",
+          "date": "2020-12-30",
+          "time": "17:16:00",
+          "roll_call": "290",
+          "question": "On the Motion to Proceed",
+          "result": "Motion to Proceed Agreed to",
+          "total_yes": 80,
+          "total_no": 12,
+          "total_not_voting": 8,
+          "api_url": "https://api.propublica.org/congress/v1/116/senate/sessions/2/votes/290.json"
+        },
+        {
+          "chamber": "Senate",
+          "date": "2020-12-11",
+          "time": "12:30:00",
+          "roll_call": "264",
+          "question": "On the Conference Report",
+          "result": "Conference Report Agreed to",
+          "total_yes": 84,
+          "total_no": 13,
+          "total_not_voting": 3,
+          "api_url": "https://api.propublica.org/congress/v1/116/senate/sessions/2/votes/264.json"
+        },
+        {
+          "chamber": "Senate",
+          "date": "2020-12-11",
+          "time": "10:33:00",
+          "roll_call": "263",
+          "question": "On the Cloture Motion",
+          "result": "Cloture Motion Agreed to",
+          "total_yes": 84,
+          "total_no": 13,
+          "total_not_voting": 3,
+          "api_url": "https://api.propublica.org/congress/v1/116/senate/sessions/2/votes/263.json"
+        }
+      ]
 }
-    

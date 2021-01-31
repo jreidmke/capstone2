@@ -1,5 +1,4 @@
 //METHODS
-
 import {useState, useEffect} from 'react';
 import {useParams} from 'react-router-dom';
 import {PropublicaApi} from './../api/api';
@@ -81,7 +80,7 @@ const BillDetails = () => {
             <Row id='tables'>
                 <Col>
                     <h3>Complete Bill Actions</h3>
-                    {bill ? <BillHistoryActions votes={bill.actions}/> : ""}
+                    {bill ? <BillHistoryActions actions={bill.actions}/> : ""}
                 </Col>
 
                 <Col>
