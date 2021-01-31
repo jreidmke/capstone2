@@ -11,12 +11,12 @@ const BillLinks = ({bill}) => {
         <Card.Body>
             <Row>
                 <Col>
-                    <a href={`${bill.congressdotgov_url}/text`}><Image src={congressLogo} id='logo'/>
-                    <p>Full Bill Text from Congess.gov</p></a>
+                    {bill.congressdotgov_url ? <a href={`${bill.congressdotgov_url}/text`}><Image src={congressLogo} id='logo'/>
+                    <p>Full Bill Text from Congess.gov</p></a> : ""}
                 </Col>
                 <Col>
-                    <a href={bill.govtrack_url}><Image src={govtrackLogo} id='logo'/>
-                    <p>Supplementary Data from Govtrack.com</p></a>
+                    {bill.govtrack_url ? <a href={bill.govtrack_url}><Image src={govtrackLogo} id='logo'/>
+                    <p>Supplementary Data from Govtrack.com</p></a> : ""}
                 </Col>
                 <Col>
                     {bill.presidential_statements.length ? 
