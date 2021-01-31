@@ -1,11 +1,11 @@
 function formatVotes(data) {
     return data['results'][0]['votes'];
-}
+}; 
 
 function formatBillId(billId) {
     if(!billId) return;
     return billId.slice(0, billId.indexOf('-')).toUpperCase();
-}
+}; 
 
 function isEmpty(obj) {
     for(var key in obj) {
@@ -13,7 +13,7 @@ function isEmpty(obj) {
             return false;
     }
     return true;
-}
+}; 
 
 function getStateAndCd(str) {
     let strArr = str.split('%2F').filter(x => x.indexOf(':') !== -1);
@@ -40,7 +40,7 @@ function slimItDown(arr, tlArr=[]) {
         return slimItDown(arr.slice(arr.indexOf(item) + 1), tlArr);
     }
     return tlArr.filter(o => o.action_type !== "Calendars").reverse(); 
-}
+};
 
 function dateTimeFormatter(datetime) {
     const month ={
@@ -74,6 +74,6 @@ function moneyFormatter(num, idx=num.length) {
 
 const checkForRep = (arr, office) => {
     return arr.data['offices'].filter(o => o.name === `U.S. ${office}`)
-}
+}; 
 
 export {formatVotes, formatBillId, isEmpty, getStateAndCd, slimItDown, dateTimeFormatter, moneyFormatter, checkForRep};
