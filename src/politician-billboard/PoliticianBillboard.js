@@ -1,11 +1,11 @@
 import Container from 'react-bootstrap/Container';
 import PoliticianContact from './PoliticianContact';
 import './PoliticianBillboard.css'
-import RolesTimeline from './../roles/RolesTimeline';
+import RolesTimeline from '../roles/RolesTimeline';
 import Tab from 'react-bootstrap/Tab'
 import Tabs from 'react-bootstrap/Tabs'
 import PoliticianPortrait from './PoliticianPortrait';
-import CurrentTerm from './../roles/CurrentTerm';
+import CurrentTerm from '../roles/CurrentTerm';
 
 const PoliticianBillboard = ({politician}) => {
     return(

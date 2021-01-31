@@ -6,7 +6,7 @@ import {useParams} from 'react-router-dom';
 import {PropublicaApi} from './../api/api';
 import { TwitterTimelineEmbed } from 'react-twitter-embed';
 import LoadingSpinner from './../common/LoadingSpinner';
-import PoliticianBillboard from './PoliticianBillboard';
+import PoliticianBillboard from './../politician-billboard/PoliticianBillboard';
 import EmptyPolBillboard from './../empty-components/EmptyPolBillboard';
 import VotesAndSponsoredBills from './../votes/VotesAndSponsoredBills';
 import ContributionList from './../contributions/ContributionList';

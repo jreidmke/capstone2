@@ -1,0 +1,44 @@
+{
+  "congress": 115,
+  "id": "PN40",
+  "date_received": "2017-01-20",
+  "description": "John F. Kelly, of Virginia, to be Secretary of Homeland Security.",
+  "nominee_state": "VA",
+  "committee_uri": null,
+  "latest_action_date": "2017-01-20",
+  "status": "Confirmed",
+  "actions": [
+    {
+      "date": "2017-01-20",
+      "description": "Confirmed by the Senate by Yea-Nay Vote. 88 - 11."
+    },
+    {
+      "date": "2017-01-20",
+      "description": "Considered by Senate."
+    },
+    {
+      "date": "2017-01-20",
+      "description": "Received in the Senate."
+    },
+    {
+      "date": "2017-01-10",
+      "description": "Senate Committee on Homeland Security and Governmental Affairs. Hearings held prior to introduction and/or referral. Hearings printed: S.Hrg. 115-141. ("
+    },
+    {
+      "date": "2017-01-10",
+      "description": "Senate Committee on Homeland Security and Governmental Affairs. Hearings held prior to introduction and/or referral."
+    }
+  ],
+  "votes": [
+    {
+      "uri": "https://api.propublica.org/congress/v1/115/senate/sessions/1/votes/30.json",
+      "date": "2017-01-20",
+      "roll_call": 30,
+      "question": "On the Nomination",
+      "result": "Nomination Confirmed",
+      "total_yes": 88,
+      "total_no": 11,
+      "total_not_voting": 1
+    }
+  ]
+}

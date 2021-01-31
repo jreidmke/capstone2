@@ -12,7 +12,6 @@ const NomineeDetails = () => {
         async function getNom() {
             const resp = await PropublicaApi.getNominationData(nomId);
             setNominee(resp);
-            console.log(resp);
         }
         getNom();
     }, []);
