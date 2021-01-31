@@ -1,0 +1,87 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`it matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="fade alert alert-success alert-dismissible show"
+    role="alert"
+  >
+    <button
+      class="close"
+      type="button"
+    >
+      <span
+        aria-hidden="true"
+      >
+        ×
+      </span>
+      <span
+        class="sr-only"
+      >
+        Close alert
+      </span>
+    </button>
+    <b>
+      Lorem ipsum
+    </b>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`it matches snapshot 2`] = `
+<DocumentFragment>
+  <div
+    class="spinner-border"
+    role="status"
+  >
+    <span
+      class="sr-only"
+    >
+      Loading...
+    </span>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`it matches snapshot 3`] = `
+<DocumentFragment>
+  <div
+    class="fade alert alert-success alert-dismissible show"
+    role="alert"
+  >
+    <button
+      class="close"
+      type="button"
+    >
+      <span
+        aria-hidden="true"
+      >
+        ×
+      </span>
+      <span
+        class="sr-only"
+      >
+        Close alert
+      </span>
+    </button>
+    <b>
+      Lorem ipsum
+    </b>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`renders without crashing and matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="spinner-border"
+    role="status"
+  >
+    <span
+      class="sr-only"
+    >
+      Loading...
+    </span>
+  </div>
+</DocumentFragment>
+`;
