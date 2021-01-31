@@ -1,19 +1,25 @@
+//METHODS
+
 import {useState, useEffect} from 'react';
 import {useParams} from 'react-router-dom';
 import {PropublicaApi} from './../api/api';
+import {dateTimeFormatter} from './../helpers/helpers';
+
+//STYLING COMPONENTS
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import {FaArrowDown} from 'react-icons/fa';
-import LoadingSpinner from './../common/LoadingSpinner';
+import {RiGovernmentFill} from 'react-icons/ri';
+import {BsAwardFill} from 'react-icons/bs'
+import './BillDetails.css';
+
+//BILL COMPONENTS
 import BillHistoryVotes from './BillHistoryVotes';
 import BillHistoryActions from './BillHistoryActions'
 import BillTitle from './BillTItle';
 import BillCard from './../bill-card/BillCard'; 
-import './BillDetails.css';
-import {RiGovernmentFill, RiAwardFill} from 'react-icons/ri';
-import {BsAwardFill} from 'react-icons/bs'
-import {dateTimeFormatter} from './../helpers/helpers';
+import LoadingSpinner from './../common/LoadingSpinner';
 
 const BillDetails = () => {
     const {billId} = useParams();

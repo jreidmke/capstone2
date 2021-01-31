@@ -1,0 +1,133 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`it matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="container"
+  >
+    <div
+      class="row"
+      id="title"
+    >
+      <div
+        class="spinner-border"
+        role="status"
+      >
+        <span
+          class="sr-only"
+        >
+          Loading...
+        </span>
+      </div>
+    </div>
+    <div
+      class="row"
+    >
+      <div
+        class="col"
+      />
+      <div
+        class="col-6"
+      >
+        <svg
+          fill="currentColor"
+          height="10em"
+          stroke="currentColor"
+          stroke-width="0"
+          viewBox="0 0 24 24"
+          width="10em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g>
+            <path
+              d="M0 0h24v24H0z"
+              fill="none"
+            />
+            <path
+              d="M2 19V8H1V6h3V4a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v2h3v2h-1v11h1v2H1v-2h1zm11 0v-7h-2v7h2zm-5 0v-7H6v7h2zm10 0v-7h-2v7h2zM6 5v1h12V5H6z"
+            />
+          </g>
+        </svg>
+      </div>
+      <div
+        class="col"
+      />
+    </div>
+    <div
+      class="row"
+      id="card"
+    >
+      <div
+        class="col"
+      >
+        <div
+          class="spinner-border"
+          role="status"
+        >
+          <span
+            class="sr-only"
+          >
+            Loading...
+          </span>
+        </div>
+      </div>
+    </div>
+    <hr />
+    <div
+      class="row"
+      id="directions"
+    >
+      <div
+        class="col"
+      >
+        <h2>
+          For More Information, Scroll Down
+        </h2>
+      </div>
+    </div>
+    <div
+      class="row"
+      id="arrow"
+    >
+      <div
+        class="col"
+      >
+        <svg
+          color="white"
+          fill="currentColor"
+          height="10em"
+          stroke="currentColor"
+          stroke-width="0"
+          style="color: white;"
+          viewBox="0 0 448 512"
+          width="10em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M413.1 222.5l22.2 22.2c9.4 9.4 9.4 24.6 0 33.9L241 473c-9.4 9.4-24.6 9.4-33.9 0L12.7 278.6c-9.4-9.4-9.4-24.6 0-33.9l22.2-22.2c9.5-9.5 25-9.3 34.3.4L184 343.4V56c0-13.3 10.7-24 24-24h32c13.3 0 24 10.7 24 24v287.4l114.8-120.5c9.3-9.8 24.8-10 34.3-.4z"
+          />
+        </svg>
+      </div>
+    </div>
+    <div
+      class="row"
+      id="tables"
+    >
+      <div
+        class="col"
+      >
+        <h3>
+          Complete Bill Actions
+        </h3>
+      </div>
+      <div
+        class="col"
+      >
+        <h3>
+          Complete Bill Vote List
+        </h3>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

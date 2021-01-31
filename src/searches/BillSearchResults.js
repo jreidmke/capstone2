@@ -1,13 +1,13 @@
 import {useParams} from 'react-router-dom';
 import {useState, useEffect} from 'react';
-import {PropublicaApi} from './../api/api';
+import {PropublicaApi} from '../api/api';
 import { Link } from 'react-router-dom';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Table from 'react-bootstrap/Table';
 import {FaCheck, FaTimes} from 'react-icons/fa'; 
-import {dateTimeFormatter} from './../helpers/helpers';
+import {dateTimeFormatter} from '../helpers/helpers';
 import './BillSearchResults.css'; 
 import {useHistory} from 'react-router-dom';
 

@@ -6,7 +6,7 @@ import LocalPoliticians from './../politicians/LocalPoliticians';
 import PoliticianDetails from './../politicians/PoliticianDetails';
 import NomineeDetails from './../nominees/NomineeDetails';
 import Hompage from "./../homepage/Homepage";
-import BillSearchResults from './../bills/BillSearchResults'; 
+import BillSearchResults from './../searches/BillSearchResults'; 
 
 const Routes = () => {
     return(

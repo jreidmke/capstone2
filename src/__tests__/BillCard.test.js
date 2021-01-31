@@ -15,6 +15,4 @@ it("matches snapshot", function() {
 
 it("renders with incomplete data", function() {
     render(<BillCard bill={billDataIncomplete}/>); 
-})
-
-//need to add tests for bad URLs. bills/123 ...something like that. 
+}); 
