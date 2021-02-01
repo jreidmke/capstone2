@@ -20,10 +20,8 @@ const NavBar = () => {
                 <NavDropdown.Item href="/house">U.S. Representatives</NavDropdown.Item>
             </NavDropdown>
             </Nav>
-            <Form inline>
                 <BillForm isNavbar={true}/>
                 <AddressForm isNavbar={true}/>
-            </Form>
         </Navbar.Collapse>
         </Navbar>
     )
