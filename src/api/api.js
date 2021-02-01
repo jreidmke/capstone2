@@ -2,10 +2,10 @@ import axios from 'axios';
 import { formatVotes, getStateAndCd, checkForRep } from '../helpers/helpers';
 
 //KEYS
-// const googleCivicDataKey = process.env.REACT_APP_GOOGLE_CIVIC_DATA_KEY;
-// const mapboxKey = process.env.REACT_APP_MAPBOX_KEY;
-// const propublicaKey = process.env.REACT_APP_PROPUBLICA_KEY;
-// const crpKey = process.env.REACT_APP_CRP_KEY;
+const googleCivicDataKey = process.env.REACT_APP_GOOGLE_CIVIC_DATA_KEY;
+const mapboxKey = process.env.REACT_APP_MAPBOX_KEY;
+const propublicaKey = process.env.REACT_APP_PROPUBLICA_KEY;
+const crpKey = process.env.REACT_APP_CRP_KEY;
 
 //BASE URL's
 const propublicaBaseUrl = `https://api.propublica.org/`
