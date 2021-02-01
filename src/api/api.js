@@ -20,7 +20,6 @@ class PropublicaApi {
     /**Generic Propublic API Request */
     static async request(endpoint, method='get') {
         console.debug("API Call:", endpoint, method);
-        console.log(propublicaKey);
         const url=`${propublicaBaseUrl}${endpoint}`;
         const headers = { 'X-API-Key': propublicaKey }; 
         try {
