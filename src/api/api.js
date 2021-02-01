@@ -1,10 +1,15 @@
 import axios from 'axios';
 import { formatVotes, getStateAndCd, checkForRep } from '../helpers/helpers';
-import {googleCivicDataKey, mapboxKey, propublicaKey, crpKey} from '../keys';
+
+//KEYS
+const googleCivicDataKey = process.env.REACT_APP_GOOGLE_CIVIC_DATA_KEY;
+const mapboxKey = process.env.REACT_APP_MAPBOX_KEY;
+const propublicaKey = process.env.REACT_APP_PROPUBLICA_KEY;
+const crpKey = process.env.REACT_APP_CRP_KEY;
 
 //BASE URL's
-const googleBaseUrl = `https://www.googleapis.com/civicinfo/v2/representatives`;
 const propublicaBaseUrl = `https://api.propublica.org/`
+const googleBaseUrl = `https://www.googleapis.com/civicinfo/v2/representatives`;
 const mapboxBaseUrl = 'https://api.mapbox.com/geocoding/v5/mapbox.places/';
 const crpBaseUrl = 'https://www.opensecrets.org/api/';
 
@@ -15,14 +20,14 @@ class PropublicaApi {
     /**Generic Propublic API Request */
     static async request(endpoint, method='get') {
         console.debug("API Call:", endpoint, method);
-
+        console.log(propublicaKey);
         const url=`${propublicaBaseUrl}${endpoint}`;
         const headers = { 'X-API-Key': propublicaKey }; 
         try {
             return(await axios({url, method, headers})).data; 
         } catch (error) {
             console.error("API Error:", error.response);
-            let message = error.response.data.error.message;
+            let message = error.response;
             throw Array.isArray(message) ? message : [message]; 
         }
     };

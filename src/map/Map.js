@@ -11,7 +11,8 @@ import Container from 'react-bootstrap/Container';
 import AddressForm from '../searches/AddressForm';
 import repSeal from './../images/repSeal.png';
 import senSeal from './../images/senSeal.png';
-import {googleMapsKey} from './../keys';
+// import {googleMapsKey} from './../keys';
+const googleMapsKey = process.env.REACT_GOOGLE_MAPS_KEY; 
 
 const MapContainer = () => {
   const [center, setCenter] = useState({
