@@ -58,7 +58,7 @@ const PoliticianDetails = () => {
                 </Col>
 
                 <Col>
-                    <ContributionList/>
+                    {/* <ContributionList/> */}
                 </Col>
             </Row>
 
